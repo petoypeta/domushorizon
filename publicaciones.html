@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Publicaciones</title>
+  <meta name="description" content="Documentos técnicos y publicaciones del equipo Domus Horizon sobre investigación analítico-cuántica, algoritmos y complejidad computacional." />
+  <meta name="keywords" content="Domus Horizon, publicaciones, documentos técnicos, investigación analítico-cuántica, algoritmos" />
+  <meta name="author" content="Domus Horizon" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://domushorizon.com/publicaciones.html" />
+  <meta property="og:title" content="Domus Horizon — Publicaciones" />
+  <meta property="og:description" content="Documentos técnicos y publicaciones del equipo Domus Horizon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://domushorizon.com/publicaciones.html" />
+  <meta property="og:image" content="https://domushorizon.com/og-image.png" />
+  <meta property="og:site_name" content="Domus Horizon" />
+  <meta property="og:locale" content="es_ES" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domus Horizon — Publicaciones" />
+  <meta name="twitter:description" content="Documentos técnicos y publicaciones del equipo Domus Horizon." />
+  <meta name="twitter:image" content="https://domushorizon.com/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="index.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="investigacion.html">Investigaciones</a></li>
+      <li><a href="publicaciones.html" class="active">Publicaciones</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <div class="hero">
+      <h1>Publicaciones</h1>
+      <div class="sub">Documentos técnicos de Domus Horizon</div>
+    </div>
+
+    <!-- Publicación 1 -->
+    <div class="card">
+      <div class="label">Publicación 1 — Framework Domus Horizon Cognitivo</div>
+      <p class="prose">
+        Resultados principales del Programa M-1: la función de convergencia c(N),
+        las tres fases geométricas, el modelo de Runge, el Oráculo Geométrico
+        Determinista y el experimento mega-escala Quark-Cuaternario.
+      </p>
+    </div>
+
+    <!-- Conjetura M-1 -->
+    <div class="card">
+      <div class="label">Conjetura M-1 — Función de Convergencia c(N)</div>
+      <p class="prose" style="margin-bottom:20px">
+        El hallazgo central del programa es que el número mínimo de iteraciones
+        para la convergencia estadística del algoritmo Domus Horizon satisface:
+      </p>
+      <div class="code-block">k*(N) = c(N) · N · log(N)</div>
+      <p class="prose" style="margin-top:16px">
+        donde c(N) no es una constante universal sino una función que evoluciona
+        con la escala, gobernada por tres fases geométricas distintas.
+      </p>
+    </div>
+
+    <!-- Tabla c(N) -->
+    <div class="card">
+      <div class="label">Tabla Maestra c(N) — Datos Empíricos</div>
+      <table>
+        <thead>
+          <tr>
+            <th>N (nodos)</th>
+            <th>c observado</th>
+            <th>Fase</th>
+            <th>Fuente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>20 – 100</td><td>6.000</td><td>I — Geometría local</td><td>Fase 0</td></tr>
+          <tr><td>200 – 500</td><td>10.000</td><td>Transición</td><td>Fase 1</td></tr>
+          <tr><td>1.000</td><td>23.165</td><td>Transición crítica</td><td>P1</td></tr>
+          <tr><td>5.000</td><td>18.786</td><td>II — Macro</td><td>P1</td></tr>
+          <tr><td>7.000</td><td>18.072</td><td>II — Macro</td><td>P1</td></tr>
+          <tr><td>12.000</td><td>17.035</td><td>II — Macro</td><td>P1</td></tr>
+          <tr><td>18.000</td><td>16.330</td><td>II — Macro</td><td>P1</td></tr>
+          <tr><td>25.000</td><td>15.800</td><td>II — Macro</td><td>Mega-escala v2</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tres fases -->
+    <div class="card">
+      <div class="label">Las Tres Fases de Complejidad</div>
+
+      <div class="researcher">
+        <h3>Fase I — Dominancia Local &nbsp;<span class="badge">N ≤ 100</span></h3>
+        <p>c = 6.000 = K₂ (Kissing Number del plano euclidiano). La geometría
+          local Delaunay domina. Cada nodo tiene 6 vecinos y el SA necesita
+          exactamente c = K₂ "rotaciones" por vecindad de Voronoi.</p>
+      </div>
+
+      <div class="researcher">
+        <h3>Transición — Saturación de Clústeres &nbsp;<span class="badge">100 &lt; N &lt; 1.000</span></h3>
+        <p>c sube de 6 a ~23. Emergen clústeres de alta densidad. El SA debe
+          navegar entre clústeres, rompiendo la aproximación de planaridad local.
+          El paisaje de energía se vuelve rugoso.</p>
+      </div>
+
+      <div class="researcher" style="margin-bottom:0">
+        <h3>Fase II — Autoorganización Macro &nbsp;<span class="badge">N &gt; 1.000</span></h3>
+        <p>c decrece siguiendo c(N) = 160 / log(N). La distribución uniforme
+          genera homogeneidad estadística. El grafo KNN-12 es casi-regular y
+          el SA explota esta regularidad: cada movimiento 2-opt porta información
+          estadística predecible.</p>
+      </div>
+    </div>
+
+    <!-- Modelo de Runge -->
+    <div class="card">
+      <div class="label">Modelo de Runge Logarítmico (MRL)</div>
+      <p class="prose" style="margin-bottom:16px">
+        Como forma funcional unificada sobre todos los N se propone:
+      </p>
+      <div class="code-block">           a · log(N)
+c(N) = ────────────────────
+        1 + b · log(N)²
+
+Parámetros ajustados:  a = 2.946 · b = 0.02229
+Máximo analítico:      N* = exp(1/√b) ≈ 811  →  c(N*) ≈ 9.87</div>
+      <p class="prose" style="margin-top:16px">
+        El modelo captura cualitativamente las tres fases pero el Modelo de Dos
+        Fases M2F (c₀ = 6 para N ≤ 100 · transición lineal-log · 160/log(N)
+        para N &gt; 1.000) ofrece mejor ajuste empírico.
+      </p>
+    </div>
+
+    <!-- DGO -->
+    <div class="card">
+      <div class="label">Oráculo Geométrico Determinista (DGO)</div>
+      <p class="prose" style="margin-bottom:16px">
+        El DGO es un algoritmo completamente determinista basado en triangulación
+        de Delaunay + búsqueda 2-opt restringida. Elimina el 94.3% del espacio
+        de búsqueda para N = 100 y supera al SA estocástico en 4 de 5 instancias.
+      </p>
+      <table>
+        <thead>
+          <tr><th>N</th><th>DGO (dist.)</th><th>MSA (dist.)</th><th>Resultado</th><th>Poda Delaunay</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>20</td><td>433.27</td><td>555.93</td><td>✅ DGO −22%</td><td>74.2%</td></tr>
+          <tr><td>30</td><td>554.00</td><td>498.74</td><td>❌ MSA mejor</td><td>81.6%</td></tr>
+          <tr><td>50</td><td>724.00</td><td>912.03</td><td>✅ DGO −21%</td><td>88.8%</td></tr>
+          <tr><td>75</td><td>916.61</td><td>1369.20</td><td>✅ DGO −33%</td><td>92.6%</td></tr>
+          <tr><td>100</td><td>1132.37</td><td>1548.32</td><td>✅ DGO −27%</td><td>94.3%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mega-escala -->
+    <div class="card">
+      <div class="label">Experimento Mega-Escala — Arquitectura Quark-Cuaternario</div>
+      <p class="prose" style="margin-bottom:16px">
+        N = 50.000 nodos distribuidos en dos bloques independientes de 25.000.
+        8.000.000 iteraciones totales. Hardware: Debian Linux, 12 núcleos,
+        30 GB RAM + 24 GB swap. Duración: 47 minutos.
+      </p>
+      <div class="code-block">Bloque QUARK        →  c = 15.8000  |  78.42% aceptados  |  1402s
+Bloque CUATERNARIO  →  c = 15.8000  |  78.34% aceptados  |  1424s
+Simetría Quark-Cuaternaria: Δ = 0.10%  ← CONFIRMADA</div>
+    </div>
+
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Investigación Independiente &nbsp;·&nbsp; 2026</footer>
+  </div>
+
+</body>
+</html>
