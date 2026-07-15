@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Next Millennium · Contact</title>
+  <meta name="description" content="Contact the Domus Horizon Next Millennium project. Inquiries about research and scientific collaborations." />
+  <meta name="keywords" content="Domus Horizon, Next Millennium, contact, inquiry, research" />
+  <meta name="author" content="Domus Horizon" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://domushorizon.vercel.app/proximo-milenio/contact-en.html" />
+  <meta property="og:title" content="Domus Horizon — Next Millennium · Contact" />
+  <meta property="og:description" content="Contact the Domus Horizon Next Millennium project." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://domushorizon.vercel.app/proximo-milenio/contact-en.html" />
+  <meta property="og:image" content="https://domushorizon.vercel.app/og-image.png" />
+  <meta property="og:site_name" content="Domus Horizon" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domus Horizon — Next Millennium · Contact" />
+  <meta name="twitter:description" content="Contact the Domus Horizon Next Millennium project." />
+  <meta name="twitter:image" content="https://domushorizon.vercel.app/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="../index-en.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="index-en.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact-en.html" class="active">Contact</a></li>
+      <li><a href="contacto.html" class="lang-switch" aria-label="Switch to Spanish">ESP</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <div class="hero">
+      <h1>Contact</h1>
+      <div class="sub">Next Millennium communication channel</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Contact Information</div>
+      <p class="prose" style="margin-bottom:16px">
+        For technical inquiries, collaboration proposals or requests to replicate
+        experiments, write to:
+      </p>
+      <div class="code-block">contacto@domushorizon.com</div>
+      <p class="prose" style="margin-top:16px">
+        Operational headquarters: Canelones, Uruguay.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="label">Form</div>
+
+      <div data-fs-success style="display: none; color: #2ecc71; font-weight: bold; margin-bottom: 15px;">
+        Thank you! Your message has been sent successfully. We will be in touch soon.
+      </div>
+      <div data-fs-error style="display: none; color: #e74c3c; font-weight: bold; margin-bottom: 15px;">
+        There was an error sending the message. Please try again.
+      </div>
+
+      <form id="contact-form" class="contact-form">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" data-fs-field required placeholder="Your name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" data-fs-field required placeholder="you@email.com" />
+          <span data-fs-error="email" style="color: #e74c3c; font-size: 0.85em;"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message / Inquiry</label>
+          <textarea id="message" name="message" data-fs-field required placeholder="Write your inquiry here..."></textarea>
+          <span data-fs-error="message" style="color: #e74c3c; font-size: 0.85em;"></span>
+        </div>
+
+        <button type="submit" data-fs-submit-btn>Send Message</button>
+      </form>
+
+      <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'mwvgpqpa' });
+      </script>
+      <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    </div>
+
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Next Millennium &nbsp;·&nbsp; 2026</footer>
+  </div>
+
+</body>
+</html>

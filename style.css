@@ -265,6 +265,28 @@ tr:last-child td { border-bottom: none; }
   border-color: #f8514955;
 }
 
+/* ── Language switcher ─────────────────────────────────────── */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #1f6feb22;
+  color: var(--accent);
+  border: 1px solid #1f6feb55;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.lang-switch:hover {
+  background: #1f6feb44;
+}
+
 /* ── Millennium problems toggle ─────────────────────────────── */
 .problem-item {
   margin-bottom: 24px;
