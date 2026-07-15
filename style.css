@@ -241,6 +241,30 @@ tr:last-child td { border-bottom: none; }
   border: 1px solid #1f6feb55;
 }
 
+.badge-green {
+  background: #3fb95022;
+  color: #3fb950;
+  border-color: #3fb95055;
+}
+
+.badge-yellow {
+  background: #d2992222;
+  color: #d29922;
+  border-color: #d2992255;
+}
+
+.badge-orange {
+  background: #e3b34122;
+  color: #e3b341;
+  border-color: #e3b34155;
+}
+
+.badge-red {
+  background: #f8514922;
+  color: #f85149;
+  border-color: #f8514955;
+}
+
 /* ── Millennium problems toggle ─────────────────────────────── */
 .problem-item {
   margin-bottom: 24px;

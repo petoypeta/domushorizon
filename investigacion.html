@@ -258,6 +258,85 @@
       </div>
     </div>
 
+    <!-- Resultados computacionales DGO -->
+    <div class="card">
+      <div class="label">Resultados del Framework Domus Horizon Cognitivo</div>
+
+      <h2 style="color:var(--text-hi);font-size:1.2rem;margin-bottom:12px;">Oráculo Geométrico Determinista (DGO)</h2>
+      <p class="prose" style="margin-bottom:20px;">
+        El DGO es un algoritmo completamente determinista basado en triangulación de Delaunay + búsqueda 2-opt restringida. Elimina el 94.3% del espacio de búsqueda para N = 100 y supera al MSA estocástico en 4 de 5 instancias.
+      </p>
+
+      <div class="note" style="margin-bottom:20px;">
+        <strong>Resultado cuántico estructural:</strong> 4 de 5 instancias favorecen al DGO, con una poda Delaunay creciente que converge hacia el 95%. El punto de transición en N = 30 marca el límite actual de ventana de MSA sobre el oráculo geométrico.
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>N</th>
+              <th>DGO (dist.)</th>
+              <th>MSA (dist.)</th>
+              <th>Resultado</th>
+              <th>Poda Delaunay</th>
+              <th>Estado Cuaternario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20</td>
+              <td>433.27</td>
+              <td>555.93</td>
+              <td><span class="badge badge-green">DGO −22%</span></td>
+              <td>74.2%</td>
+              <td><span class="badge badge-orange">Q3</span></td>
+            </tr>
+            <tr>
+              <td>30</td>
+              <td>554.00</td>
+              <td>498.74</td>
+              <td><span class="badge badge-red">MSA mejor</span></td>
+              <td>81.6%</td>
+              <td><span class="badge badge-red">Q4</span></td>
+            </tr>
+            <tr>
+              <td>50</td>
+              <td>724.00</td>
+              <td>912.03</td>
+              <td><span class="badge badge-green">DGO −21%</span></td>
+              <td>88.8%</td>
+              <td><span class="badge badge-yellow">Q2</span></td>
+            </tr>
+            <tr>
+              <td>75</td>
+              <td>916.61</td>
+              <td>1369.20</td>
+              <td><span class="badge badge-green">DGO −33%</span></td>
+              <td>92.6%</td>
+              <td><span class="badge badge-green">Q1</span></td>
+            </tr>
+            <tr>
+              <td>100</td>
+              <td>1132.37</td>
+              <td>1548.32</td>
+              <td><span class="badge badge-green">DGO −27%</span></td>
+              <td>94.3%</td>
+              <td><span class="badge badge-green">Q1</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="color:var(--text-hi);font-size:1rem;margin:24px 0 12px;">Leyenda del Cálculo Cuaternario</h3>
+      <ul style="font-size:0.92rem;color:var(--text-lo);padding-left:18px;line-height:1.9;">
+        <li><span class="badge badge-green">Q1</span> DGO dominante, poda Delaunay &gt; 90%.</li>
+        <li><span class="badge badge-yellow">Q2</span> DGO dominante, poda Delaunay 80% – 90%.</li>
+        <li><span class="badge badge-orange">Q3</span> DGO dominante, poda Delaunay &lt; 80%.</li>
+        <li><span class="badge badge-red">Q4</span> MSA supera al DGO; zona de transición.</li>
+      </ul>
+    </div>
+
     <script>
       document.querySelectorAll('.btn-toggle').forEach(btn => {
         btn.addEventListener('click', () => {
