@@ -100,7 +100,8 @@ nav {
 }
 
 .has-submenu:hover .submenu,
-.has-submenu:focus-within .submenu {
+.has-submenu:focus-within .submenu,
+.has-submenu.open .submenu {
   display: block;
 }
 

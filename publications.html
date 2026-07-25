@@ -195,5 +195,19 @@ Quark-Quaternary symmetry: Δ = 0.10%  ← CONFIRMED</div>
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Independent Research &nbsp;·&nbsp; 2026</footer>
   </div>
 
+
+<script>
+(function() {
+  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      var li = el.parentElement;
+      var wasOpen = li.classList.contains('open');
+      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
+      if (!wasOpen) li.classList.add('open');
+    });
+  });
+})();
+</script>
 </body>
 </html>
