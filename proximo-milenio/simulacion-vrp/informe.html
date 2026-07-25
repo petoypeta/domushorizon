@@ -33,7 +33,6 @@
         </ul>
       </li>
       <li><a href="../contacto.html">Contacto</a></li>
-      <li><a href="simulation.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
     </ul>
   </nav>
 
@@ -196,19 +195,6 @@
 
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
   </div>
-
-<script>
-(function() {
-  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      var li = el.parentElement;
-      var wasOpen = li.classList.contains('open');
-      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
-      if (!wasOpen) li.classList.add('open');
-    });
-  });
-})();
-</script>
+<script src="../../nav-submenu.js"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@
         <a href="simulation.html" class="active">simulacion</a>
         <ul class="submenu">
           <li><a href="simulation.html" class="active">simulacion</a></li>
-          <li><a href="informe.html">informe</a></li>
+          <li><a href="informe.html">report</a></li>
         </ul>
       </li>
       <li><a href="../contact-en.html">Contact</a></li>
@@ -87,9 +87,9 @@
       <div class="label">Computation times</div>
       <ul class="prose">
         <li><strong>generación:</strong> 0.009 s</li>
-<li><strong>resolución:</strong> 0.842 s</li>
+<li><strong>resolución:</strong> 0.850 s</li>
 <li><strong>reportes:</strong> 0.018 s</li>
-<li><strong>mapa:</strong> 0.419 s</li>
+<li><strong>mapa:</strong> 0.423 s</li>
       </ul>
     </div>
 
@@ -104,19 +104,6 @@
 
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
   </div>
-
-<script>
-(function() {
-  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      var li = el.parentElement;
-      var wasOpen = li.classList.contains('open');
-      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
-      if (!wasOpen) li.classList.add('open');
-    });
-  });
-})();
-</script>
+<script src="../../nav-submenu.js"></script>
 </body>
 </html>
