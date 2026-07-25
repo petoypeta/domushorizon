@@ -66,7 +66,7 @@ nav {
   -ms-overflow-style: none;
   flex: 1;
   min-width: 0;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .nav-links::-webkit-scrollbar {
@@ -424,4 +424,10 @@ footer {
   color: #484f58;
   padding: 32px 0 16px;
   letter-spacing: 0.04em;
+}
+
+@media (max-width: 720px) {
+  nav { padding: 0 12px; }
+  .nav-brand { font-size: 0.85rem; margin-right: 8px; }
+  .nav-links a { font-size: 0.72rem; padding: 4px 6px; }
 }
