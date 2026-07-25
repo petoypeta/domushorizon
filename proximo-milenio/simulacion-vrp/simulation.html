@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Next Millennium · Chongqing VRP Simulation</title>
+  <meta name="description" content="Analytical VRP simulation for a Chongqing-like mega-city: 1,450 stops, 50 vehicles, 5 groups." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .metric { background: rgba(255,255,255,0.06); padding: 1rem; border-radius: 8px; }
+    .metric .value { font-size: 1.6rem; font-weight: 700; }
+    .map { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.25); }
+    .download { margin-top: 1rem; }
+    .download a { display: inline-block; margin-right: 1rem; color: #7dd3fc; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="../../index-en.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="../index-en.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../research.html">Research</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="simulation.html" class="active">simulacion</a></li>
+      <li><a href="informe.html">report</a></li>
+      <li><a href="../contact-en.html">Contact</a></li>
+      <li><a href="index.html" class="lang-switch" aria-label="Switch to Spanish">ESP</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="hero">
+      <h1>Chongqing VRP Simulation</h1>
+      <div class="sub">1,450 stops · 50 vehicles · 5 heterogeneous groups · ≤ 8 hours</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Simulation summary</div>
+      <div class="metrics">
+        <div class="metric"><div class="value">50/50</div><div>vehicles used</div></div>
+        <div class="metric"><div class="value">1,399</div><div>stops served</div></div>
+        <div class="metric"><div class="value">51</div><div>unassigned</div></div>
+        <div class="metric"><div class="value">1682.0 km</div><div>total distance</div></div>
+        <div class="metric"><div class="value">330 min</div><div>average time</div></div>
+        <div class="metric"><div class="value">464 min</div><div>max time</div></div>
+      </div>
+      <p class="prose">
+        All routes satisfy the hard 8-hour limit. The simulation enforces weight, volume,
+        cargo compatibility, time windows, refrigerated expiration, and LIFO loading for
+        car-carrier trucks.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="label">Route map</div>
+      <p class="prose">
+        The central depot is marked with a black star. Each color represents a fleet group.
+        Circles mark the <strong>start</strong> of each route and squares the <strong>end</strong>.
+        Black crosses are stops left unassigned due to capacity or time-window constraints.
+      </p>
+      <img class="map" src="vrp_chongqing_map.png" alt="Chongqing VRP route map" />
+    </div>
+
+    <div class="card">
+      <div class="label">Scenario parameters</div>
+      <ul class="prose">
+        <li><strong>Depot:</strong> (15, 15) km</li>
+        <li><strong>City:</strong> 30 × 30 km</li>
+        <li><strong>Average speed:</strong> 15 km/h (topografía Chongqing)</li>
+        <li><strong>Shift limit:</strong> 8 horas (480 min)</li>
+        <li><strong>Vehicles:</strong> 50 en 5 grupos</li>
+        <li><strong>Delivery points:</strong> 1.450</li>
+        <li><strong>Cargo types:</strong> small, general, vehicle, bulk, refrigerated</li>
+        <li><strong>Constraints:</strong> weight, volume, LIFO length, time windows, expiration, chemical compatibility</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="label">Computation times</div>
+      <ul class="prose">
+        <li><strong>generación:</strong> 0.009 s</li>
+<li><strong>resolución:</strong> 0.842 s</li>
+<li><strong>reportes:</strong> 0.018 s</li>
+<li><strong>mapa:</strong> 0.419 s</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="label">Downloads</div>
+      <div class="download">
+        <a href="vrp_chongqing_routes.csv" download>Routes CSV</a>
+        <a href="vrp_chongqing_stops.csv" download>Stops CSV</a>
+        <a href="vrp_chongqing_map.png" download>Map PNG</a>
+      </div>
+    </div>
+
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
+  </div>
+</body>
+</html>

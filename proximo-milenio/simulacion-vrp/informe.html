@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Próximo Milenio · Informe VRP Chongqing</title>
+  <meta name="description" content="Informe analista de operaciones logísticas: simulación VRP Chongqing con 1.450 puntos y 50 vehículos." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .report-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .report-table th, .report-table td { border: 1px solid rgba(255,255,255,0.15); padding: 0.5rem; text-align: left; }
+    .report-table th { background: rgba(255,255,255,0.08); }
+    .route-seq { background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; font-family: ui-monospace, monospace; line-height: 1.6; overflow-x: auto; }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .metric { background: rgba(255,255,255,0.06); padding: 1rem; border-radius: 8px; }
+    .metric .value { font-size: 1.6rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="../../index.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../nosotros.html">Nosotros</a></li>
+      <li><a href="../investigacion.html">Investigaciones</a></li>
+      <li><a href="../publicaciones.html">Publicaciones</a></li>
+      <li><a href="index.html">simulacion</a></li>
+      <li><a href="informe.html" class="active">informe</a></li>
+      <li><a href="../contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="hero">
+      <h1>Informe de Operaciones Logísticas</h1>
+      <div class="sub">VRP Chongqing · 1.450 puntos · 50 vehículos heterogéneos</div>
+    </div>
+
+    <div class="card">
+      <div class="label">1. Descripción de la Flota</div>
+      <p class="prose">
+        Flota de 50 unidades divididas en 5 grupos funcionales. Cada vehículo tiene un nombre operativo único, tara de referencia y capacidad útil declarada.
+      </p>
+      <table class="report-table">
+        <tr><th>Grupo</th><th>Unidad</th><th>Nombre ficticio</th><th>Tipo</th><th>Tara</th><th>Capacidad útil</th></tr>
+        <tr><td>G1</td><td>G1-01</td><td>El Correcaminos</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-02</td><td>Hélice Roja</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-03</td><td>Flecha Blanca</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-04</td><td>Brisa Polar</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-05</td><td>Rayo Azul</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-06</td><td>Siroco</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-07</td><td>Centella</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-08</td><td>Viento Norte</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-09</td><td>Alba Veloz</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-10</td><td>Nube Ligera</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-11</td><td>Fogón Exprés</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-12</td><td>Pajaro Veloz</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-13</td><td>Rayo Gris</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-14</td><td>Bruma Matinal</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G1</td><td>G1-15</td><td>Ciclón Urbano</td><td>Furgoneta ligera / paquetería</td><td>1,800 kg</td><td>800 kg / 12 m³ / lmax 6.0 m</td></tr>
+<tr><td>G2</td><td>G2-01</td><td>Titán I</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-02</td><td>Coloso de Acero</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-03</td><td>Muro de Hierro</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-04</td><td>Tormenta Gris</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-05</td><td>Avalancha</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-06</td><td>Roca Viva</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-07</td><td>Leviatán</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-08</td><td>Centurión</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-09</td><td>Hércules</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-10</td><td>Mamut</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-11</td><td>Titán II</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-12</td><td>Oso de Carga</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-13</td><td>Fortaleza</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-14</td><td>Gigante de Barro</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G2</td><td>G2-15</td><td>Acero Puro</td><td>Camión rígido medio</td><td>5,500 kg</td><td>4,500 kg / 35 m³ / lmax 0.0 m</td></tr>
+<tr><td>G3</td><td>G3-01</td><td>Plataforma Alfa</td><td>Porta-vehículos con grúa</td><td>12,000 kg</td><td>8,000 kg / 0.0 m³ / lmax 22.0 m</td></tr>
+<tr><td>G3</td><td>G3-02</td><td>Puente Móvil</td><td>Porta-vehículos con grúa</td><td>12,000 kg</td><td>8,000 kg / 0.0 m³ / lmax 22.0 m</td></tr>
+<tr><td>G3</td><td>G3-03</td><td>Cargador Celeste</td><td>Porta-vehículos con grúa</td><td>12,000 kg</td><td>8,000 kg / 0.0 m³ / lmax 22.0 m</td></tr>
+<tr><td>G3</td><td>G3-04</td><td>Dragón Verde</td><td>Porta-vehículos con grúa</td><td>12,000 kg</td><td>8,000 kg / 0.0 m³ / lmax 22.0 m</td></tr>
+<tr><td>G3</td><td>G3-05</td><td>Júpiter</td><td>Porta-vehículos con grúa</td><td>12,000 kg</td><td>8,000 kg / 0.0 m³ / lmax 22.0 m</td></tr>
+<tr><td>G3</td><td>G3-06</td><td>Orión</td><td>Porta-vehículos con grúa</td><td>12,000 kg</td><td>8,000 kg / 0.0 m³ / lmax 22.0 m</td></tr>
+<tr><td>G4</td><td>G4-01</td><td>Vulcano</td><td>Camión cisterna / materiales peligrosos</td><td>14,000 kg</td><td>12,000 kg / 25 m³ / lmax 0.0 m</td></tr>
+<tr><td>G4</td><td>G4-02</td><td>Cerbero</td><td>Camión cisterna / materiales peligrosos</td><td>14,000 kg</td><td>12,000 kg / 25 m³ / lmax 0.0 m</td></tr>
+<tr><td>G4</td><td>G4-03</td><td>Quimera</td><td>Camión cisterna / materiales peligrosos</td><td>14,000 kg</td><td>12,000 kg / 25 m³ / lmax 0.0 m</td></tr>
+<tr><td>G4</td><td>G4-04</td><td>Escarabajo Rojo</td><td>Camión cisterna / materiales peligrosos</td><td>14,000 kg</td><td>12,000 kg / 25 m³ / lmax 0.0 m</td></tr>
+<tr><td>G4</td><td>G4-05</td><td>Torbellino Negro</td><td>Camión cisterna / materiales peligrosos</td><td>14,000 kg</td><td>12,000 kg / 25 m³ / lmax 0.0 m</td></tr>
+<tr><td>G4</td><td>G4-06</td><td>Sombra Química</td><td>Camión cisterna / materiales peligrosos</td><td>14,000 kg</td><td>12,000 kg / 25 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-01</td><td>Glaciar</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-02</td><td>Aurora Boreal</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-03</td><td>Frío Extremo</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-04</td><td>Criogénico</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-05</td><td>Nevado</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-06</td><td>Polo Sur</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-07</td><td>Iceberg</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+<tr><td>G5</td><td>G5-08</td><td>Helio</td><td>Refrigerado premium</td><td>9,000 kg</td><td>7,000 kg / 40 m³ / lmax 0.0 m</td></tr>
+      </table>
+      <ul class="prose">
+        <li><strong>G1:</strong> Furgonetas ligeras para paquetería pequeña y carga general de poco volumen.</li>
+        <li><strong>G2:</strong> Camiones rígidos para carga general y a granel estándar.</li>
+        <li><strong>G3:</strong> Porta-vehículos con restricción LIFO y límite de longitud de plataforma (22 m).</li>
+        <li><strong>G4:</strong> Vehículos habilitados para materiales peligrosos y carga a granel especial.</li>
+        <li><strong>G5:</strong> Unidades refrigeradas de alto rendimiento para productos termosensibles.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="label">Mapa de rutas</div>
+      <p class="prose">
+        El depósito central está marcado con una estrella negra. Cada color representa un grupo de flota.
+        Círculos marcan el inicio de cada ruta y cuadrados el fin. Las cruces negras son puntos no asignados.
+      </p>
+      <img class="map" src="vrp_chongqing_map.png" alt="Mapa de rutas VRP Chongqing" style="max-width:100%; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.25);" />
+    </div>
+
+    <div class="card">
+      <div class="label">2. Mapeo de Ruta Representativa</div>
+      <p class="prose">
+        Unidad seleccionada: <strong>G5-05</strong> (Nevado), grupo G5.<br>
+        Paradas: <strong>29</strong> · Duración: <strong>4h 54m</strong> · Distancia: <strong>37.43 km</strong>.
+      </p>
+      <div class="route-seq">
+        <strong>Depósito central</strong> (15.00, 15.00) km — salida 06:00<br>
+→ <strong>R0188</strong> (13.83, 19.12) km — <em>llegada</em> 06:55 — <em>carga:</em> refrigerated<br>
+→ <strong>R0189</strong> (12.70, 19.42) km — <em>llegada</em> 07:04 — <em>carga:</em> refrigerated<br>
+→ <strong>R0176</strong> (12.67, 18.92) km — <em>llegada</em> 07:10 — <em>carga:</em> refrigerated<br>
+→ <strong>R0180</strong> (11.77, 19.10) km — <em>llegada</em> 07:17 — <em>carga:</em> refrigerated<br>
+→ <strong>R0173</strong> (11.15, 19.19) km — <em>llegada</em> 07:25 — <em>carga:</em> refrigerated<br>
+→ <strong>R0177</strong> (10.69, 19.15) km — <em>llegada</em> 07:31 — <em>carga:</em> refrigerated<br>
+→ <strong>R0163</strong> (10.63, 19.34) km — <em>llegada</em> 07:37 — <em>carga:</em> refrigerated<br>
+→ <strong>R0184</strong> (10.52, 19.70) km — <em>llegada</em> 07:45 — <em>carga:</em> refrigerated<br>
+→ <strong>R0185</strong> (9.88, 19.61) km — <em>llegada</em> 07:53 — <em>carga:</em> refrigerated<br>
+→ <strong>R0153</strong> (10.30, 18.83) km — <em>llegada</em> 08:03 — <em>carga:</em> refrigerated<br>
+→ <strong>R0161</strong> (10.66, 18.25) km — <em>llegada</em> 08:11 — <em>carga:</em> refrigerated<br>
+→ <strong>R0186</strong> (10.67, 18.18) km — <em>llegada</em> 08:16 — <em>carga:</em> refrigerated<br>
+→ <strong>R0158</strong> (11.47, 20.07) km — <em>llegada</em> 08:30 — <em>carga:</em> refrigerated<br>
+→ <strong>R0162</strong> (11.25, 20.34) km — <em>llegada</em> 08:36 — <em>carga:</em> refrigerated<br>
+→ <strong>R0160</strong> (11.60, 20.44) km — <em>llegada</em> 08:42 — <em>carga:</em> refrigerated<br>
+→ <strong>R0166</strong> (12.13, 20.78) km — <em>llegada</em> 08:49 — <em>carga:</em> refrigerated<br>
+→ <strong>R0171</strong> (11.61, 21.08) km — <em>llegada</em> 08:55 — <em>carga:</em> refrigerated<br>
+→ <strong>R0165</strong> (11.37, 21.28) km — <em>llegada</em> 09:01 — <em>carga:</em> refrigerated<br>
+→ <strong>R0179</strong> (11.12, 21.28) km — <em>llegada</em> 09:07 — <em>carga:</em> refrigerated<br>
+→ <strong>R0183</strong> (10.79, 20.91) km — <em>llegada</em> 09:15 — <em>carga:</em> refrigerated<br>
+→ <strong>R0168</strong> (10.22, 20.99) km — <em>llegada</em> 09:22 — <em>carga:</em> refrigerated<br>
+→ <strong>R0154</strong> (10.36, 22.00) km — <em>llegada</em> 09:32 — <em>carga:</em> refrigerated<br>
+→ <strong>R0181</strong> (10.24, 22.29) km — <em>llegada</em> 09:38 — <em>carga:</em> refrigerated<br>
+→ <strong>R0156</strong> (10.77, 21.93) km — <em>llegada</em> 09:45 — <em>carga:</em> refrigerated<br>
+→ <strong>R0190</strong> (9.43, 22.24) km — <em>llegada</em> 09:55 — <em>carga:</em> refrigerated<br>
+→ <strong>R0159</strong> (9.06, 20.62) km — <em>llegada</em> 10:06 — <em>carga:</em> refrigerated<br>
+→ <strong>R0187</strong> (7.89, 18.78) km — <em>llegada</em> 10:19 — <em>carga:</em> refrigerated<br>
+→ <strong>R0170</strong> (12.52, 21.32) km — <em>llegada</em> 10:46 — <em>carga:</em> refrigerated<br>
+→ <strong>R0172</strong> (13.19, 22.20) km — <em>llegada</em> 10:57 — <em>carga:</em> refrigerated<br>
+→ <strong>Depósito central</strong> (15.00, 15.00) km — <em>retorno</em> 11:32
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">3. Resultados del Cálculo</div>
+      <div class="metrics">
+        <div class="metric"><div class="value">50/50</div><div>vehículos usados</div></div>
+        <div class="metric"><div class="value">1,399</div><div>puntos entregados</div></div>
+        <div class="metric"><div class="value">51</div><div>no asignados</div></div>
+        <div class="metric"><div class="value">1682.03 km</div><div>distancia total</div></div>
+        <div class="metric"><div class="value">330 min</div><div>tiempo promedio</div></div>
+        <div class="metric"><div class="value">464 min</div><div>tiempo máximo</div></div>
+      </div>
+      <p class="prose">
+        Cumplimiento de la jornada laboral de 8 horas: <strong>True</strong>.<br>
+        El informe presenta únicamente los resultados finales de la simulación; no se incluyen fórmulas matemáticas ni procedimientos de cálculo.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="label">4. Tiempo de Procesamiento</div>
+      <p class="prose">
+        El sistema procesó todo el cálculo (generación de puntos, resolución del VRP, reportes, mapa y exportación web) en <strong>1.359 s</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="label">5. Limitación Física del Hardware</div>
+      <table class="report-table">
+        <tr><th>Componente</th><th>Detalle</th></tr>
+        <tr><td>Motherboard</td><td>ASUS PRIME A320M-K (ASUSTeK COMPUTER INC.)</td></tr>
+        <tr><td>CPU</td><td>12 núcleos, hasta 4.464 MHz (85% escala actual)</td></tr>
+        <tr><td>RAM</td><td>30 GB total / ~8.9 GB disponibles</td></tr>
+        <tr><td>GPU</td><td>AMD Radeon RX 570 (PCIe) + AMD Radeon Vega integrada (APU Cezanne)</td></tr>
+      </table>
+    </div>
+
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
+  </div>
+</body>
+</html>
