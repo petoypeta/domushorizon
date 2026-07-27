@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Próximo Milenio · VRP Triple Frontera AR/BR/UY</title>
+  <meta name="description" content="Simulación VRP de dos etapas con rutas reales por carretera en la triple frontera." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .hero h1 { font-size: 1.8rem; }
+    .hero .sub { font-size: 1rem; color: #94a3b8; }
+    .map-frame { width: 100%; height: 72vh; border: none; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.25); }
+    .download { margin-top: 1rem; }
+    .download a { display: inline-block; margin-right: 1rem; color: #7dd3fc; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .kpi { background: rgba(255,255,255,0.06); padding: 1rem; border-radius: 8px; text-align: center; }
+    .kpi .value { font-size: 1.5rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="../../index.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../nosotros.html">Nosotros</a></li>
+      <li><a href="../investigacion.html">Investigaciones</a></li>
+      <li><a href="../publicaciones.html">Publicaciones</a></li>
+      <li class="has-submenu">
+        <a href="index.html" class="active">simulacion</a>
+        <ul class="submenu">
+          <li><a href="index.html" class="active">simulacion</a></li>
+          <li><a href="informe.html">informe</a></li>
+          <li><a href="auditoria.html">auditoria</a></li>
+        </ul>
+      </li>
+      <li><a href="../../conjeturas.html">conjeturas</a></li>
+      <li><a href="../espiral-ulam.html">Espiral de Ulam</a></li>
+      <li><a href="../../contacto.html">Contacto</a></li>
+      <li><a href="../index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
+    </ul>
+  </nav>
+  <div class="page">
+    <div class="hero">
+      <h1>VRP Triple Frontera — Rutas Reales</h1>
+      <div class="sub">Argentina · Brasil · Uruguay · depósitos nacionales · 50 repartos locales · 10 simulaciones</div>
+    </div>
+    <div class="card">
+      <div class="label">Resumen del mejor escenario</div>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="value">50</div><div>vehículos locales</div></div>
+        <div class="kpi"><div class="value">50</div><div>repartos nacionales</div></div>
+        <div class="kpi"><div class="value">0</div><div>incumplimientos de 8 h</div></div>
+        <div class="kpi"><div class="value">7 h 22 min</div><div>máximo reparto local</div></div>
+        <div class="kpi"><div class="value">10.484 km</div><div>distancia total</div></div>
+        <div class="kpi"><div class="value">5 h 9 min</div><div>demoras fronterizas</div></div>
+      </div>
+      <p class="prose">
+        Los 50 vehículos realizan distribución de última milla dentro de su país desde los depósitos de
+        Concordia, Salto y Quaraí. Cada reparto nacional respeta un máximo de <strong>8 horas ida y vuelta</strong>.
+        Las transferencias intragrupo transfronterizas se calculan por separado, con demora aduanera,
+        y no se someten al límite de jornada local. La mercadería destinada a zona franca queda fuera de
+        los repartos locales hasta la liberación y retiro del importador.
+      </p>
+    </div>
+    <div class="card">
+      <div class="label">Mapa interactivo de rutas</div>
+      <iframe class="map-frame" src="report.html" title="Mapa VRP Triple Frontera"></iframe>
+    </div>
+    <div class="card">
+      <div class="label">Descargas</div>
+      <div class="download">
+        <a href="rutas.csv" download>Rutas CSV</a>
+        <a href="paradas.csv" download>Paradas CSV</a>
+        <a href="best_solution.json" download>Solución JSON</a>
+        <a href="scenario.json" download>Escenario JSON</a>
+      </div>
+    </div>
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
+  </div>
+  <script src="../../nav-submenu.js"></script>
+</body>
+</html>

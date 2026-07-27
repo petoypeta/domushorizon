@@ -1,0 +1,600 @@
+{
+  "central_depot": {
+    "name": "Puente Salto Grande",
+    "lat": -31.27511,
+    "lon": -57.93825,
+    "country_code": "UY",
+    "place": "depot"
+  },
+  "country_depots": [
+    {
+      "name": "Depósito Concordia",
+      "lat": -31.3972539,
+      "lon": -58.0173305,
+      "country_code": "AR",
+      "place": "depot"
+    },
+    {
+      "name": "Depósito Salto",
+      "lat": -31.38889,
+      "lon": -57.9608876,
+      "country_code": "UY",
+      "place": "depot"
+    },
+    {
+      "name": "Depósito Quaraí",
+      "lat": -30.3818093,
+      "lon": -56.4526573,
+      "country_code": "BR",
+      "place": "depot"
+    }
+  ],
+  "intra_group_transfers": [
+    {
+      "flow_id": "intragroup_ar",
+      "flow_type": "transferencia_intragrupo",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "country_code": "AR",
+      "customs_required": true,
+      "daily_route_limit_applies": false
+    },
+    {
+      "flow_id": "intragroup_uy",
+      "flow_type": "reabastecimiento_nacional",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "country_code": "UY",
+      "customs_required": false,
+      "daily_route_limit_applies": false
+    },
+    {
+      "flow_id": "intragroup_br",
+      "flow_type": "transferencia_intragrupo",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "country_code": "BR",
+      "customs_required": true,
+      "daily_route_limit_applies": false
+    }
+  ],
+  "free_zone_consignments": [],
+  "stops": [
+    {
+      "stop_id": "AR001",
+      "name": "Concordia",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.3972539,
+      "lon": -58.0173305,
+      "place": "city",
+      "population": 149450
+    },
+    {
+      "stop_id": "AR002",
+      "name": "Concepción del Uruguay",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -32.4851849,
+      "lon": -58.2320232,
+      "place": "town",
+      "population": 82729
+    },
+    {
+      "stop_id": "AR003",
+      "name": "Chajarí",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -30.7603828,
+      "lon": -57.9852672,
+      "place": "town",
+      "population": 45848
+    },
+    {
+      "stop_id": "AR004",
+      "name": "Villaguay",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.8676271,
+      "lon": -59.0270174,
+      "place": "town",
+      "population": 48965
+    },
+    {
+      "stop_id": "AR005",
+      "name": "Federación",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -30.9856574,
+      "lon": -57.9194395,
+      "place": "town",
+      "population": 17547
+    },
+    {
+      "stop_id": "AR006",
+      "name": "Colón",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -32.2182804,
+      "lon": -58.1356171,
+      "place": "town",
+      "population": 24835
+    },
+    {
+      "stop_id": "AR007",
+      "name": "Villa Adela",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.3987112,
+      "lon": -58.0715482,
+      "place": "village",
+      "population": 2335
+    },
+    {
+      "stop_id": "AR008",
+      "name": "San Salvador",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.6247717,
+      "lon": -58.5051869,
+      "place": "town",
+      "population": 13228
+    },
+    {
+      "stop_id": "AR009",
+      "name": "Federal",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -30.9558743,
+      "lon": -58.7797943,
+      "place": "town",
+      "population": 18015
+    },
+    {
+      "stop_id": "AR010",
+      "name": "San José",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -32.2122726,
+      "lon": -58.2191465,
+      "place": "town",
+      "population": 18178
+    },
+    {
+      "stop_id": "AR011",
+      "name": "Monte Caseros",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -30.2496832,
+      "lon": -57.6294418,
+      "place": "town",
+      "population": 23470
+    },
+    {
+      "stop_id": "AR012",
+      "name": "Benito Legerén",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.4340229,
+      "lon": -58.0741894,
+      "place": "village",
+      "population": 1639
+    },
+    {
+      "stop_id": "AR013",
+      "name": "Villa Elisa",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -32.1631324,
+      "lon": -58.4004902,
+      "place": "town",
+      "population": 11117
+    },
+    {
+      "stop_id": "AR014",
+      "name": "La Criolla",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.2689855,
+      "lon": -58.1089185,
+      "place": "village",
+      "population": 2382
+    },
+    {
+      "stop_id": "AR015",
+      "name": "Los Charrúas",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.1695333,
+      "lon": -58.1862719,
+      "place": "village",
+      "population": 3774
+    },
+    {
+      "stop_id": "AR016",
+      "name": "Colonia Ayui",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.2068575,
+      "lon": -58.0304248,
+      "place": "village",
+      "population": 2770
+    },
+    {
+      "stop_id": "AR017",
+      "name": "San José de Feliciano",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -30.3854477,
+      "lon": -58.7506643,
+      "place": "town",
+      "population": 12084
+    },
+    {
+      "stop_id": "AR018",
+      "name": "Rosario del Tala",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -32.3008178,
+      "lon": -59.138887,
+      "place": "town",
+      "population": 12801
+    },
+    {
+      "stop_id": "AR019",
+      "name": "Puerto Yeruá",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.533997,
+      "lon": -58.0143686,
+      "place": "village",
+      "population": 1696
+    },
+    {
+      "stop_id": "AR020",
+      "name": "General Campos",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -31.5233816,
+      "lon": -58.405795,
+      "place": "village",
+      "population": 3149
+    },
+    {
+      "stop_id": "AR021",
+      "name": "Basavilbaso",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -32.3743512,
+      "lon": -58.8830126,
+      "place": "village",
+      "population": 9742
+    },
+    {
+      "stop_id": "AR022",
+      "name": "Mocoretá",
+      "country_code": "AR",
+      "country_name": "Argentina",
+      "lat": -30.6192351,
+      "lon": -57.9665847,
+      "place": "village",
+      "population": 5974
+    },
+    {
+      "stop_id": "UY023",
+      "name": "Salto",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.38889,
+      "lon": -57.9608876,
+      "place": "city",
+      "population": 114043
+    },
+    {
+      "stop_id": "UY024",
+      "name": "Paysandú",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -32.3217257,
+      "lon": -58.0892136,
+      "place": "city",
+      "population": 81489
+    },
+    {
+      "stop_id": "UY025",
+      "name": "Bella Unión",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -30.2612301,
+      "lon": -57.6059002,
+      "place": "city",
+      "population": 16166
+    },
+    {
+      "stop_id": "UY026",
+      "name": "Young",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -32.6995318,
+      "lon": -57.6341992,
+      "place": "city",
+      "population": 17814
+    },
+    {
+      "stop_id": "UY027",
+      "name": "Nuevo Paysandú",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -32.2702086,
+      "lon": -58.0837759,
+      "place": "town",
+      "population": 10170
+    },
+    {
+      "stop_id": "UY028",
+      "name": "Constitución",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.0671956,
+      "lon": -57.8493627,
+      "place": "town",
+      "population": 2873
+    },
+    {
+      "stop_id": "UY029",
+      "name": "Colonia 18 de Julio",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.3563317,
+      "lon": -57.8739866,
+      "place": "village",
+      "population": 865
+    },
+    {
+      "stop_id": "UY030",
+      "name": "Chacras de Paysandú",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -32.3438623,
+      "lon": -58.0086687,
+      "place": "town",
+      "population": 4963
+    },
+    {
+      "stop_id": "UY031",
+      "name": "Guichón",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -32.3603815,
+      "lon": -57.2002983,
+      "place": "town",
+      "population": 5762
+    },
+    {
+      "stop_id": "UY032",
+      "name": "Quebracho",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.9355644,
+      "lon": -57.9005404,
+      "place": "town",
+      "population": 2817
+    },
+    {
+      "stop_id": "UY033",
+      "name": "San Antonio",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.3574021,
+      "lon": -57.7669147,
+      "place": "village",
+      "population": 996
+    },
+    {
+      "stop_id": "UY034",
+      "name": "Termas del Daymán",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.4525017,
+      "lon": -57.9083609,
+      "place": "village",
+      "population": 482
+    },
+    {
+      "stop_id": "UY035",
+      "name": "Albisu",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.3842312,
+      "lon": -57.8146463,
+      "place": "village",
+      "population": 572
+    },
+    {
+      "stop_id": "UY036",
+      "name": "Garibaldi",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -31.3394184,
+      "lon": -57.8289095,
+      "place": "village",
+      "population": 549
+    },
+    {
+      "stop_id": "UY037",
+      "name": "Baltasar Brum",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -30.7201503,
+      "lon": -57.3307941,
+      "place": "town",
+      "population": 2728
+    },
+    {
+      "stop_id": "UY038",
+      "name": "Belén",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -30.789358,
+      "lon": -57.7790732,
+      "place": "town",
+      "population": 1795
+    },
+    {
+      "stop_id": "UY039",
+      "name": "Tomás Gomensoro",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -30.4304107,
+      "lon": -57.435025,
+      "place": "town",
+      "population": 2775
+    },
+    {
+      "stop_id": "UY040",
+      "name": "San Félix",
+      "country_code": "UY",
+      "country_name": "Uruguay",
+      "lat": -32.3511177,
+      "lon": -58.1016822,
+      "place": "town",
+      "population": 2533
+    },
+    {
+      "stop_id": "BR041",
+      "name": "Quaraí",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -30.3818093,
+      "lon": -56.4526576,
+      "place": "town",
+      "population": 23500
+    },
+    {
+      "stop_id": "BR042",
+      "name": "Uruguaiana",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -29.7560726,
+      "lon": -57.0867546,
+      "place": "city",
+      "population": 117210
+    },
+    {
+      "stop_id": "BR043",
+      "name": "Sant'Ana do Livramento",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -30.8894097,
+      "lon": -55.5317694,
+      "place": "town",
+      "population": 84421
+    },
+    {
+      "stop_id": "BR044",
+      "name": "Alegrete",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -29.790166,
+      "lon": -55.794862,
+      "place": "town",
+      "population": 72409
+    },
+    {
+      "stop_id": "BR045",
+      "name": "Itaqui",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -29.1222037,
+      "lon": -56.5551258,
+      "place": "town",
+      "population": 35768
+    },
+    {
+      "stop_id": "BR046",
+      "name": "Manoel Viana",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -29.585935,
+      "lon": -55.484112,
+      "place": "village",
+      "population": 6801
+    },
+    {
+      "stop_id": "BR047",
+      "name": "Barra do Quaraí",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -30.208947,
+      "lon": -57.5505128,
+      "place": "village",
+      "population": 4241
+    },
+    {
+      "stop_id": "BR048",
+      "name": "Maçambará",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -29.144485,
+      "lon": -56.067444,
+      "place": "village",
+      "population": 4425
+    },
+    {
+      "stop_id": "BR049",
+      "name": "Cati",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -30.444926,
+      "lon": -55.934737,
+      "place": "village",
+      "population": 0
+    },
+    {
+      "stop_id": "BR050",
+      "name": "Francisco Borges",
+      "country_code": "BR",
+      "country_name": "Brasil",
+      "lat": -30.079588,
+      "lon": -57.217561,
+      "place": "village",
+      "population": 0
+    }
+  ]
+}

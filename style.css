@@ -470,6 +470,10 @@ footer {
   letter-spacing: 0.04em;
 }
 
+@media (max-width: 1300px) {
+  .nav-links a { padding: 5px 8px; font-size: 0.80rem; }
+}
+
 @media (max-width: 720px) {
   nav { padding: 0 12px; }
   .nav-brand { font-size: 0.85rem; margin-right: 8px; }

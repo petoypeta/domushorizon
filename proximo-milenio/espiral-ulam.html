@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Espiral de Ulam</title>
+  <meta name="description" content="Visualización computacional de la espiral de Ulam hasta 900.060.001, con fórmulas de coordenadas y análisis de diagonales primas." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .ulam-intro { max-width: 780px; font-size: 1.08rem; color: #cbd5e1; line-height: 1.7; }
+    .ulam-preview { width: 100%; display: block; image-rendering: pixelated; background: #fff; border-radius: 10px; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+    .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .metric { border: 1px solid rgba(125, 211, 252, .2); background: rgba(255,255,255,.05); border-radius: 10px; padding: 1rem; }
+    .metric strong { display: block; font-size: 1.4rem; color: #7dd3fc; margin-bottom: .2rem; }
+    .formula { overflow-x: auto; padding: 1rem; border-radius: 8px; background: #07111f; color: #dbeafe; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .table-wrap { overflow-x: auto; }
+    .table-wrap table { width: 100%; border-collapse: collapse; }
+    .table-wrap th, .table-wrap td { padding: .75rem; border-bottom: 1px solid rgba(255,255,255,.12); text-align: left; }
+    .table-wrap th { color: #7dd3fc; }
+    .download a { color: #7dd3fc; margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="../index.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="investigacion.html">Investigaciones</a></li>
+      <li><a href="publicaciones.html">Publicaciones</a></li>
+      <li class="has-submenu">
+        <a href="triple-frontera/index.html">simulacion</a>
+        <ul class="submenu">
+          <li><a href="triple-frontera/index.html">simulacion</a></li>
+          <li><a href="triple-frontera/informe.html">informe</a></li>
+          <li><a href="triple-frontera/auditoria.html">auditoria</a></li>
+        </ul>
+      </li>
+      <li><a href="../conjeturas.html">conjeturas</a></li>
+      <li><a href="espiral-ulam.html" class="active">Espiral de Ulam</a></li>
+      <li><a href="../contacto.html">Contacto</a></li>
+      <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
+    </ul>
+  </nav>
+  <main class="page">
+    <header class="hero">
+      <h1>Espiral de Ulam</h1>
+      <p class="sub">Primos en una retícula cuadrada · simulación local hasta 900.060.001</p>
+    </header>
+    <section class="card">
+      <p class="ulam-intro">La espiral de Ulam coloca los enteros positivos desde el centro y marca los números primos. Las bandas diagonales son una consecuencia visual de que cada diagonal contiene valores de polinomios cuadráticos, no evidencia de un efecto físico o cuántico.</p>
+      <div class="metrics">
+        <div class="metric"><strong>30.001²</strong>píxeles de la imagen máxima</div>
+        <div class="metric"><strong>900.060.001</strong>entero máximo analizado</div>
+        <div class="metric"><strong>46.012.125</strong>primos visualizados</div>
+        <div class="metric"><strong>5.001²</strong>píxeles de esta vista previa</div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="label">Vista previa</div>
+      <img class="ulam-preview" src="assets/ulam/ulam_spiral_preview_5001.png" alt="Espiral de Ulam con números primos en negro" />
+      <p class="download"><a href="assets/ulam/ulam_spiral_30001.png" download>Descargar PNG máxima (30.001 × 30.001)</a><a href="assets/ulam/ulam_spiral_preview_5001.png" download>Descargar vista previa</a></p>
+    </section>
+    <section class="card">
+      <div class="label">Coordenadas</div>
+      <p>Para el punto <code>(x, y)</code>, el anillo es <code>r = max(|x|, |y|)</code> y su máximo es <code>M = (2r + 1)²</code>. El centro recibe el valor <code>1</code>.</p>
+      <div class="formula">y = -r: n = M - (r - x)
+x = -r: n = M - (2r + y + r)
+y = r:  n = M - (4r + x + r)
+x = r:  n = M - (6r + r - y)</div>
+    </section>
+    <section class="card">
+      <div class="label">Diagonales y primos</div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Vértice</th><th>Polinomio en r</th></tr></thead>
+          <tbody>
+            <tr><td>(r, −r)</td><td>(2r + 1)²</td></tr>
+            <tr><td>(−r, −r)</td><td>4r² + 2r + 1</td></tr>
+            <tr><td>(−r, r)</td><td>4r² + 1</td></tr>
+            <tr><td>(r, r)</td><td>4r² − 2r + 1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Las diagonales paralelas desplazan estas cuadráticas. Algunas producen muchos primos en intervalos finitos, mientras la densidad promedio de primos decrece aproximadamente como <code>1 / log(n)</code>.</p>
+    </section>
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; Matemática computacional</footer>
+  </main>
+  <script src="../nav-submenu.js"></script>
+</body>
+</html>

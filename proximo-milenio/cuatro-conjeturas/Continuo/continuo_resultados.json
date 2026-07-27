@@ -1,0 +1,75 @@
+{
+  "argumento_diagonal": {
+    "muestras_reales": [
+      "314159265359",
+      "271828182846",
+      "161803398875",
+      "141421356237",
+      "066987298092",
+      "057721566490"
+    ],
+    "contraejemplo_diagonal": "482502",
+    "difiere_de_cada_muestra": true
+  },
+  "racionales_enumerables_muestra": [
+    "1/1",
+    "1/2",
+    "2/1",
+    "1/3",
+    "3/2",
+    "2/3",
+    "3/1",
+    "1/4",
+    "4/3",
+    "3/5",
+    "5/2",
+    "2/5",
+    "5/3",
+    "3/4",
+    "4/1",
+    "1/5",
+    "5/4",
+    "4/7",
+    "7/3",
+    "3/8"
+  ],
+  "cardinalidad_potencia_conjunto_finito": {
+    "conjunto": [
+      "a",
+      "b",
+      "c"
+    ],
+    "partes": [
+      [],
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c"
+      ],
+      [
+        "a",
+        "c"
+      ],
+      [
+        "b",
+        "c"
+      ],
+      [
+        "a",
+        "b",
+        "c"
+      ]
+    ],
+    "cantidad_partes": 8,
+    "formula_2_n": 8
+  },
+  "nota": "CH no es computablemente verificable; es independiente de ZFC."
+}

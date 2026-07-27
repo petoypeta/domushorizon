@@ -1,0 +1,10 @@
+{
+  "limite": 1000000,
+  "todos_convergen": true,
+  "max_pasos": 524,
+  "n_max_pasos": 837799,
+  "max_valor_alcanzado": 56991483520,
+  "n_max_valor": 704511,
+  "promedio_pasos": 131.43,
+  "tiempo_s": 1.15
+}

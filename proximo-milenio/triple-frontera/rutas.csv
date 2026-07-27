@@ -1,0 +1,54 @@
+stage,flow_type,vehicle_id,type,depot,stops_count,distance_km,total_time_min,daily_route_limit_min,daily_route_compliant,border_delay_profile,border_delay_min
+troncal,transferencia_intragrupo,internacional_AR,camion_internacional,Depósito Concordia,0,43.48,281.2,,no aplica,agile,239
+troncal,reabastecimiento_nacional,internacional_UY,camion_internacional,Depósito Salto,0,32.67,40.9,,no aplica,sin cruce,0
+troncal,transferencia_intragrupo,internacional_BR,camion_internacional,Depósito Quaraí,0,434.75,535.6,,no aplica,agile,70
+local,ultima_milla_nacional,AR_furgoneta_01,furgoneta,Depósito Concordia,1,249.22,197.8,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_02,furgoneta,Depósito Concordia,1,452.8,335.1,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_03,camion_mediano,Depósito Concordia,1,400.89,311.6,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_04,furgoneta,Depósito Concordia,1,74.11,86.2,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_05,camion_mediano,Depósito Concordia,1,119.53,121.2,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_06,furgoneta,Depósito Concordia,1,72.3,97.3,480,True,,0
+local,ultima_milla_nacional,AR_camion_grande_07,camion_grande,Depósito Concordia,1,191.76,173.5,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_08,camion_mediano,Depósito Concordia,1,98.96,102.9,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_09,furgoneta,Depósito Concordia,1,12.71,33.8,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_10,camion_mediano,Depósito Concordia,1,79.08,116.7,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_11,furgoneta,Depósito Concordia,1,45.44,64.1,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_12,furgoneta,Depósito Concordia,1,324.94,287.1,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_13,camion_mediano,Depósito Concordia,1,214.72,268.2,480,True,,0
+local,ultima_milla_nacional,AR_camion_grande_14,camion_grande,Depósito Concordia,1,0.0,15.0,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_15,furgoneta,Depósito Concordia,1,216.01,176.2,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_16,furgoneta,Depósito Concordia,1,23.82,50.3,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_17,camion_mediano,Depósito Concordia,1,245.42,234.2,480,True,,0
+local,ultima_milla_nacional,AR_camion_frigorifico_18,camion_frigorifico,Depósito Concordia,1,164.02,154.9,480,True,,0
+local,ultima_milla_nacional,AR_camion_mediano_19,camion_mediano,Depósito Concordia,1,293.59,239.7,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_20,furgoneta,Depósito Concordia,1,233.64,184.0,480,True,,0
+local,ultima_milla_nacional,AR_camion_grande_21,camion_grande,Depósito Concordia,1,127.77,136.9,480,True,,0
+local,ultima_milla_nacional,AR_furgoneta_22,furgoneta,Depósito Concordia,1,334.61,271.1,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_01,camion_grande,Depósito Salto,1,297.06,310.4,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_02,camion_grande,Depósito Salto,1,119.47,142.1,480,True,,0
+local,ultima_milla_nacional,UY_camion_mediano_03,camion_mediano,Depósito Salto,1,37.6,69.7,480,True,,0
+local,ultima_milla_nacional,UY_furgoneta_04,furgoneta,Depósito Salto,1,253.6,241.7,480,True,,0
+local,ultima_milla_nacional,UY_camion_mediano_05,camion_mediano,Depósito Salto,1,19.61,38.3,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_06,camion_grande,Depósito Salto,1,173.11,183.1,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_07,camion_grande,Depósito Salto,1,141.06,159.0,480,True,,0
+local,ultima_milla_nacional,UY_camion_mediano_08,camion_mediano,Depósito Salto,1,43.82,73.0,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_09,camion_grande,Depósito Salto,1,25.2,45.8,480,True,,0
+local,ultima_milla_nacional,UY_camion_mediano_10,camion_mediano,Depósito Salto,1,235.77,226.5,480,True,,0
+local,ultima_milla_nacional,UY_furgoneta_11,furgoneta,Depósito Salto,1,289.69,233.7,480,True,,0
+local,ultima_milla_nacional,UY_furgoneta_12,furgoneta,Depósito Salto,1,405.17,402.0,480,True,,0
+local,ultima_milla_nacional,UY_camion_mediano_13,camion_mediano,Depósito Salto,1,260.26,362.7,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_14,camion_grande,Depósito Salto,1,355.06,338.8,480,True,,0
+local,ultima_milla_nacional,UY_furgoneta_15,furgoneta,Depósito Salto,1,0.0,15.0,480,True,,0
+local,ultima_milla_nacional,UY_furgoneta_16,furgoneta,Depósito Salto,1,32.43,53.0,480,True,,0
+local,ultima_milla_nacional,UY_camion_mediano_17,camion_mediano,Depósito Salto,1,245.14,242.4,480,True,,0
+local,ultima_milla_nacional,UY_camion_grande_18,camion_grande,Depósito Salto,1,247.38,258.7,480,True,,0
+local,ultima_milla_nacional,BR_furgoneta_01,furgoneta,Depósito Quaraí,1,315.13,322.7,480,True,,0
+local,ultima_milla_nacional,BR_camion_grande_02,camion_grande,Depósito Quaraí,1,133.76,241.5,480,True,,0
+local,ultima_milla_nacional,BR_camion_frigorifico_03,camion_frigorifico,Depósito Quaraí,1,217.33,218.9,480,True,,0
+local,ultima_milla_nacional,BR_furgoneta_04,furgoneta,Depósito Quaraí,1,520.78,441.6,480,True,,0
+local,ultima_milla_nacional,BR_camion_mediano_05,camion_mediano,Depósito Quaraí,1,376.95,357.1,480,True,,0
+local,ultima_milla_nacional,BR_furgoneta_06,furgoneta,Depósito Quaraí,1,435.42,358.0,480,True,,0
+local,ultima_milla_nacional,BR_furgoneta_07,furgoneta,Depósito Quaraí,1,0.0,15.0,480,True,,0
+local,ultima_milla_nacional,BR_camion_mediano_08,camion_mediano,Depósito Quaraí,1,334.9,319.1,480,True,,0
+local,ultima_milla_nacional,BR_furgoneta_09,furgoneta,Depósito Quaraí,1,240.47,218.3,480,True,,0
+local,ultima_milla_nacional,BR_camion_grande_10,camion_grande,Depósito Quaraí,1,241.48,240.9,480,True,,0

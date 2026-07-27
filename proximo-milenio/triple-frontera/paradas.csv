@@ -1,0 +1,51 @@
+stop_id,name,country,lat,lon,assigned_vehicle,depot,demand,cargo_type
+AR006,Colón,AR,-32.2182804,-58.1356171,AR_furgoneta_01,Depósito Concordia,3,general
+AR018,Rosario del Tala,AR,-32.3008178,-59.138887,AR_furgoneta_02,Depósito Concordia,6,general
+AR021,Basavilbaso,AR,-32.3743512,-58.8830126,AR_camion_mediano_03,Depósito Concordia,1,general
+AR016,Colonia Ayui,AR,-31.2068575,-58.0304248,AR_furgoneta_04,Depósito Concordia,1,general
+AR008,San Salvador,AR,-31.6247717,-58.5051869,AR_camion_mediano_05,Depósito Concordia,3,general
+AR015,Los Charrúas,AR,-31.1695333,-58.1862719,AR_furgoneta_06,Depósito Concordia,1,general
+AR022,Mocoretá,AR,-30.6192351,-57.9665847,AR_camion_grande_07,Depósito Concordia,3,refrigerado
+AR020,General Campos,AR,-31.5233816,-58.405795,AR_camion_mediano_08,Depósito Concordia,3,general
+AR007,Villa Adela,AR,-31.3987112,-58.0715482,AR_furgoneta_09,Depósito Concordia,2,general
+AR019,Puerto Yeruá,AR,-31.533997,-58.0143686,AR_camion_mediano_10,Depósito Concordia,3,general
+AR014,La Criolla,AR,-31.2689855,-58.1089185,AR_furgoneta_11,Depósito Concordia,1,fragil
+AR017,San José de Feliciano,AR,-30.3854477,-58.7506643,AR_furgoneta_12,Depósito Concordia,3,general
+AR009,Federal,AR,-30.9558743,-58.7797943,AR_camion_mediano_13,Depósito Concordia,5,general
+AR001,Concordia,AR,-31.3972539,-58.0173305,AR_camion_grande_14,Depósito Concordia,6,fragil
+AR010,San José,AR,-32.2122726,-58.2191465,AR_furgoneta_15,Depósito Concordia,6,general
+AR012,Benito Legerén,AR,-31.4340229,-58.0741894,AR_furgoneta_16,Depósito Concordia,3,fragil
+AR004,Villaguay,AR,-31.8676271,-59.0270174,AR_camion_mediano_17,Depósito Concordia,2,general
+AR003,Chajarí,AR,-30.7603828,-57.9852672,AR_camion_frigorifico_18,Depósito Concordia,2,refrigerado
+AR002,Concepción del Uruguay,AR,-32.4851849,-58.2320232,AR_camion_mediano_19,Depósito Concordia,5,general
+AR013,Villa Elisa,AR,-32.1631324,-58.4004902,AR_furgoneta_20,Depósito Concordia,6,general
+AR005,Federación,AR,-30.9856574,-57.9194395,AR_camion_grande_21,Depósito Concordia,2,fragil
+AR011,Monte Caseros,AR,-30.2496832,-57.6294418,AR_furgoneta_22,Depósito Concordia,3,general
+UY039,Tomás Gomensoro,UY,-30.4304107,-57.435025,UY_camion_grande_01,Depósito Salto,6,refrigerado
+UY028,Constitución,UY,-31.0671956,-57.8493627,UY_camion_grande_02,Depósito Salto,3,refrigerado
+UY036,Garibaldi,UY,-31.3394184,-57.8289095,UY_camion_mediano_03,Depósito Salto,2,general
+UY040,San Félix,UY,-32.3511177,-58.1016822,UY_furgoneta_04,Depósito Salto,4,general
+UY034,Termas del Daymán,UY,-31.4525017,-57.9083609,UY_camion_mediano_05,Depósito Salto,1,general
+UY038,Belén,UY,-30.789358,-57.7790732,UY_camion_grande_06,Depósito Salto,2,refrigerado
+UY032,Quebracho,UY,-31.9355644,-57.9005404,UY_camion_grande_07,Depósito Salto,4,refrigerado
+UY033,San Antonio,UY,-31.3574021,-57.7669147,UY_camion_mediano_08,Depósito Salto,2,general
+UY029,Colonia 18 de Julio,UY,-31.3563317,-57.8739866,UY_camion_grande_09,Depósito Salto,3,refrigerado
+UY027,Nuevo Paysandú,UY,-32.2702086,-58.0837759,UY_camion_mediano_10,Depósito Salto,5,general
+UY025,Bella Unión,UY,-30.2612301,-57.6059002,UY_furgoneta_11,Depósito Salto,8,general
+UY031,Guichón,UY,-32.3603815,-57.2002983,UY_furgoneta_12,Depósito Salto,6,general
+UY037,Baltasar Brum,UY,-30.7201503,-57.3307941,UY_camion_mediano_13,Depósito Salto,5,general
+UY026,Young,UY,-32.6995318,-57.6341992,UY_camion_grande_14,Depósito Salto,6,general
+UY023,Salto,UY,-31.38889,-57.9608876,UY_furgoneta_15,Depósito Salto,8,general
+UY035,Albisu,UY,-31.3842312,-57.8146463,UY_furgoneta_16,Depósito Salto,2,general
+UY024,Paysandú,UY,-32.3217257,-58.0892136,UY_camion_mediano_17,Depósito Salto,5,general
+UY030,Chacras de Paysandú,UY,-32.3438623,-58.0086687,UY_camion_grande_18,Depósito Salto,2,general
+BR050,Francisco Borges,BR,-30.079588,-57.217561,BR_furgoneta_01,Depósito Quaraí,2,general
+BR049,Cati,BR,-30.444926,-55.934737,BR_camion_grande_02,Depósito Quaraí,2,refrigerado
+BR043,Sant'Ana do Livramento,BR,-30.8894097,-55.5317694,BR_camion_frigorifico_03,Depósito Quaraí,2,refrigerado
+BR048,Maçambará,BR,-29.144485,-56.067444,BR_furgoneta_04,Depósito Quaraí,2,general
+BR047,Barra do Quaraí,BR,-30.208947,-57.5505128,BR_camion_mediano_05,Depósito Quaraí,3,fragil
+BR045,Itaqui,BR,-29.1222037,-56.5551258,BR_furgoneta_06,Depósito Quaraí,2,general
+BR041,Quaraí,BR,-30.3818093,-56.4526576,BR_furgoneta_07,Depósito Quaraí,4,general
+BR046,Manoel Viana,BR,-29.585935,-55.484112,BR_camion_mediano_08,Depósito Quaraí,3,general
+BR044,Alegrete,BR,-29.790166,-55.794862,BR_furgoneta_09,Depósito Quaraí,4,general
+BR042,Uruguaiana,BR,-29.7560726,-57.0867546,BR_camion_grande_10,Depósito Quaraí,8,refrigerado

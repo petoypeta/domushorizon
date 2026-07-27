@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Próximo Milenio · Auditoría VRP Triple Frontera</title>
+  <meta name="description" content="Auditoría crítica de la simulación VRP con rutas reales en la triple frontera Argentina, Brasil y Uruguay." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .hero h1 { font-size: 1.7rem; }
+    .hero .sub { font-size: 1rem; color: #94a3b8; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .kpi { background: rgba(255,255,255,0.06); padding: 1rem; border-radius: 8px; text-align: center; }
+    .kpi .value { font-size: 1.4rem; font-weight: 700; }
+    .download { margin-top: 1rem; }
+    .download a { display: inline-block; margin-right: 1rem; color: #7dd3fc; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+    th { color: var(--accent); }
+    tr:hover { background: rgba(255,255,255,0.03); }
+    .pros, .cons { list-style: none; padding-left: 0; margin-top: 1rem; }
+    .pros li { padding-left: 1.5rem; position: relative; margin-bottom: 0.6rem; }
+    .pros li::before { content: "+"; position: absolute; left: 0; color: #4ade80; font-weight: 700; }
+    .cons li { padding-left: 1.5rem; position: relative; margin-bottom: 0.6rem; }
+    .cons li::before { content: "−"; position: absolute; left: 0; color: #f87171; font-weight: 700; }
+    .recommend { background: rgba(125,211,252,0.08); border-left: 3px solid var(--accent); padding: 1rem; border-radius: 0 8px 8px 0; }
+    .verdict { background: rgba(74,222,128,0.08); border-left: 3px solid #4ade80; padding: 1rem; border-radius: 0 8px 8px 0; margin-top: 1rem; }
+    .warning { background: rgba(248,113,113,0.08); border-left: 3px solid #f87171; padding: 1rem; border-radius: 0 8px 8px 0; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="../../index.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../nosotros.html">Nosotros</a></li>
+      <li><a href="../investigacion.html">Investigaciones</a></li>
+      <li><a href="../publicaciones.html">Publicaciones</a></li>
+      <li class="has-submenu">
+        <a href="index.html">simulacion</a>
+        <ul class="submenu">
+          <li><a href="index.html">simulacion</a></li>
+          <li><a href="informe.html">informe</a></li>
+          <li><a href="auditoria.html" class="active">auditoria</a></li>
+        </ul>
+      </li>
+      <li><a href="../../conjeturas.html">conjeturas</a></li>
+      <li><a href="../espiral-ulam.html">Espiral de Ulam</a></li>      <li><a href="../../contacto.html">Contacto</a></li>
+      <li><a href="../index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="hero">
+      <h1>Auditoría VRP Triple Frontera</h1>
+      <div class="sub">Pros, contras y recomendaciones sobre la simulación con rutas reales · Argentina · Brasil · Uruguay</div>
+    </div>
+
+    <div class="card">
+      <div class="label">Resumen ejecutivo</div>
+      <p class="prose">
+        Se auditó una simulación VRP de dos etapas con origen en <strong>Puente Salto Grande</strong> y
+        depósitos nacionales en <strong>Concordia (AR)</strong>, <strong>Salto (UY)</strong> y
+        <strong>Quaraí (BR)</strong>. Se usaron <strong>50 paradas reales</strong>, 50 rutas locales,
+        tres transferencias troncales, distancias y tiempos de <strong>OpenStreetMap/OSRM</strong> y
+        <strong>10 corridas</strong>; se seleccionó la semilla 7. La solución asigna toda la demanda,
+        recorre <strong>10.484 km</strong> y estima <strong>1.735 L</strong> de combustible.
+      </p>
+      <div class="warning">
+        <strong>Veredicto:</strong> la distribución local es técnicamente viable y evita cruces fronterizos
+        en la última milla. La transferencia troncal a Brasil dura <strong>8 h 56 min</strong> con la demora
+        ágil sorteada; por lo tanto, requiere relevo, pernocte o una excepción operativa antes de aplicarse.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Métricas del mejor escenario</div>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="value">50</div><div>vehículos locales usados</div></div>
+        <div class="kpi"><div class="value">50</div><div>paradas entregadas</div></div>
+        <div class="kpi"><div class="value">176</div><div>unidades de demanda</div></div>
+        <div class="kpi"><div class="value">3</div><div>rutas troncales</div></div>
+        <div class="kpi"><div class="value">10.484</div><div>km totales</div></div>
+        <div class="kpi"><div class="value">520,8</div><div>ruta más larga (km)</div></div>
+        <div class="kpi"><div class="value">8 h 56 min</div><div>tiempo máximo</div></div>
+        <div class="kpi"><div class="value">5 h 9 min</div><div>demoras de frontera</div></div>
+        <div class="kpi"><div class="value">1.735</div><div>combustible (L)</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Pros</div>
+      <ul class="pros">
+        <li><strong>Rutas reales:</strong> se usan distancias y tiempos de OSRM/OpenStreetMap, no una cuadrícula sintética.</li>
+        <li><strong>Dos etapas explícitas:</strong> el origen central abastece depósitos nacionales y cada última milla se mantiene dentro de su país.</li>
+        <li><strong>Cobertura 100%:</strong> las 50 paradas y las 176 unidades de demanda quedan asignadas, sin clientes desatendidos.</li>
+        <li><strong>Flota utilizada:</strong> las 50 entregas locales se asignan a 50 vehículos compatibles con su tipo de carga.</li>
+        <li><strong>Frontera modelada:</strong> AR y BR incorporan demoras reproducibles: ágiles de 1–4 h o complejas de 6–12 h; esta corrida acumuló 309 minutos.</li>
+        <li><strong>Mapa interactivo:</strong> el informe muestra el origen, los tres depósitos nacionales y las dos etapas de la red.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="label">Contras</div>
+      <ul class="cons">
+        <li><strong>Etapa brasileña excedida:</strong> incluso con demora ágil, la troncal a Quaraí llega a 8 h 56 min, por encima de la jornada de 8 h.</li>
+        <li><strong>Demoras simuladas:</strong> las ventanas de 1–4 h y 6–12 h representan riesgo, pero aún no derivan de registros aduaneros históricos.</li>
+        <li><strong>Una entrega por ruta local:</strong> el modelo maximiza el uso de flota, no la consolidación de paradas; el kilometraje de última milla es elevado.</li>
+        <li><strong>Sin ventanas horarias:</strong> el modelo no considera horarios de apertura, tiempos de espera ni franjas de entrega.</li>
+        <li><strong>Sin tráfico ni condiciones viales:</strong> los tiempos son estáticos; no reflejan horas pico, estado de rutas o estaciones.</li>
+        <li><strong>Poca robustez estadística:</strong> 10 simulaciones no permiten estimar intervalos de confianza ni la sensibilidad completa a cada demora fronteriza.</li>
+        <li><strong>Falta de costos operativos:</strong> el informe estima combustible, pero no peajes, salarios, aduana, amortización ni seguros.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="label">Distribución por país</div>
+      <table>
+        <thead><tr><th>País</th><th>Paradas</th><th>Demanda</th></tr></thead>
+        <tbody>
+<tr><td>AR</td><td>22</td><td>70</td></tr>
+<tr><td>BR</td><td>10</td><td>32</td></tr>
+<tr><td>UY</td><td>18</td><td>74</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="label">Resumen de rutas por etapa</div>
+      <table>
+        <thead><tr><th>Etapa</th><th>Ruta / país</th><th>Vehículos</th><th>Paradas</th><th>Distancia (km)</th><th>Tiempo / demora</th></tr></thead>
+        <tbody>
+<tr><td>Troncal</td><td>Puente Salto Grande → Concordia (AR)</td><td>1</td><td>0</td><td>43,5</td><td>4 h 41 min · ágil: 3 h 59 min</td></tr>
+<tr><td>Troncal</td><td>Puente Salto Grande → Salto (UY)</td><td>1</td><td>0</td><td>32,7</td><td>41 min · sin cruce</td></tr>
+<tr><td>Troncal</td><td>Puente Salto Grande → Quaraí (BR)</td><td>1</td><td>0</td><td>434,8</td><td>8 h 56 min · ágil: 1 h 10 min</td></tr>
+<tr><td>Local</td><td>Concordia (AR)</td><td>22</td><td>22</td><td>Incluida en CSV</td><td>Hasta 7 h 22 min</td></tr>
+<tr><td>Local</td><td>Salto (UY)</td><td>18</td><td>18</td><td>Incluida en CSV</td><td>Dentro de 8 h</td></tr>
+<tr><td>Local</td><td>Quaraí (BR)</td><td>10</td><td>10</td><td>Incluida en CSV</td><td>Dentro de 8 h</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div class="label">Riesgos principales</div>
+      <ul>
+        <li><strong>Frontera separada:</strong> las demoras transfronterizas no alteran el límite de 8 h de la última milla, pero pueden afectar la disponibilidad del inventario en el depósito nacional.</li>
+        <li><strong>Zona franca:</strong> una consignación para múltiples importadores debe quedar fuera de la flota local hasta su liberación aduanera y retiro por el consignatario.</li>
+        <li><strong>Extrapolación:</strong> 50 repartos permiten validar la operación diaria, pero no reemplazan datos reales de volúmenes, ventanas de entrega y estacionalidad.</li>
+        <li><strong>Dependencia de OSRM:</strong> rutas rurales o pueblos pequeños pueden no estar actualizados en OpenStreetMap.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="label">Recomendaciones</div>
+      <div class="recommend">
+        <ol>
+          <li><strong>Registrar flujos separados:</strong> distinguir transferencia intragrupo, zona franca y última milla nacional en los manifiestos operativos.</li>
+          <li><strong>Conservar el límite de 8 horas</strong> para cada reparto local; el reporte ya valida los 50 vehículos contra 480 minutos.</li>
+          <li><strong>Incorporar ventanas de tiempo</strong> y tiempos de servicio específicos por cliente.</li>
+          <li><strong>Modelar costos reales</strong> (combustible, peajes, salarios, mantenimiento, depósito y gestión aduanera).</li>
+          <li><strong>Validar con operadores locales</strong> las demoras de frontera y los procedimientos de tránsito/depósito aduanero.</li>
+          <li><strong>Agregar consignaciones de zona franca</strong> sólo cuando se conozcan país, recinto habilitado, importador y estado de liberación.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Descargas</div>
+      <div class="download">
+        <a href="rutas.csv" download>Rutas CSV</a>
+        <a href="paradas.csv" download>Paradas CSV</a>
+        <a href="best_solution.json" download>Solución JSON</a>
+        <a href="scenario.json" download>Escenario JSON</a>
+      </div>
+    </div>
+
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
+  </div>
+<script src="../../nav-submenu.js"></script>
+</body>
+</html>

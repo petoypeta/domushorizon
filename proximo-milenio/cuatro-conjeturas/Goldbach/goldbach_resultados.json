@@ -1,0 +1,11 @@
+{
+  "limite": 100000,
+  "total_primos": 9592,
+  "total_pares": 49999,
+  "representaciones_minimas": 1,
+  "n_min_representaciones": 4,
+  "representaciones_maximas": 2168,
+  "n_max_representaciones": 99330,
+  "contraejemplos_hasta_N": [],
+  "tiempo_s": 2.8
+}

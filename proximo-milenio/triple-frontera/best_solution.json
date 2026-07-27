@@ -1,0 +1,1658 @@
+{
+  "seed": 7,
+  "metrics": {
+    "total_dist_km": 10483.8944,
+    "local_dist_km": 9972.9944,
+    "trunk_dist_km": 510.9,
+    "total_time_min": 10644.698466666667,
+    "border_delay_min": 309,
+    "local_max_time_min": 441.59166666666664,
+    "domestic_route_limit_min": 480,
+    "domestic_route_violations": 0,
+    "free_zone_consignments": 0,
+    "max_time_min": 535.6,
+    "max_dist_km": 520.7817,
+    "fuel_l": 1734.5790430000002,
+    "unassigned": 0
+  },
+  "central_depot": {
+    "name": "Puente Salto Grande",
+    "lat": -31.27511,
+    "lon": -57.93825,
+    "country_code": "UY",
+    "place": "depot"
+  },
+  "country_depots": [
+    {
+      "name": "Depósito Concordia",
+      "lat": -31.3972539,
+      "lon": -58.0173305,
+      "country_code": "AR",
+      "place": "depot"
+    },
+    {
+      "name": "Depósito Salto",
+      "lat": -31.38889,
+      "lon": -57.9608876,
+      "country_code": "UY",
+      "place": "depot"
+    },
+    {
+      "name": "Depósito Quaraí",
+      "lat": -30.3818093,
+      "lon": -56.4526573,
+      "country_code": "BR",
+      "place": "depot"
+    }
+  ],
+  "intra_group_transfers": [
+    {
+      "flow_id": "intragroup_ar",
+      "flow_type": "transferencia_intragrupo",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "country_code": "AR",
+      "customs_required": true,
+      "daily_route_limit_applies": false
+    },
+    {
+      "flow_id": "intragroup_uy",
+      "flow_type": "reabastecimiento_nacional",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "country_code": "UY",
+      "customs_required": false,
+      "daily_route_limit_applies": false
+    },
+    {
+      "flow_id": "intragroup_br",
+      "flow_type": "transferencia_intragrupo",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "country_code": "BR",
+      "customs_required": true,
+      "daily_route_limit_applies": false
+    }
+  ],
+  "free_zone_consignments": [],
+  "trunk_routes": [
+    {
+      "route_id": "troncal_AR",
+      "stage": "troncal",
+      "flow_type": "transferencia_intragrupo",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "country_code": "AR",
+      "customs_required": true,
+      "daily_route_limit_applies": false,
+      "vehicle_id": "internacional_AR",
+      "type": "camion_internacional",
+      "distance_km": 43.48,
+      "driving_time_min": 42.2,
+      "border_delay_profile": "agile",
+      "border_delay_min": 239,
+      "total_time_min": 281.2,
+      "demand_transferred": 70
+    },
+    {
+      "route_id": "troncal_UY",
+      "stage": "troncal",
+      "flow_type": "reabastecimiento_nacional",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "country_code": "UY",
+      "customs_required": false,
+      "daily_route_limit_applies": false,
+      "vehicle_id": "internacional_UY",
+      "type": "camion_internacional",
+      "distance_km": 32.67,
+      "driving_time_min": 40.9,
+      "border_delay_profile": "sin cruce",
+      "border_delay_min": 0,
+      "total_time_min": 40.9,
+      "demand_transferred": 74
+    },
+    {
+      "route_id": "troncal_BR",
+      "stage": "troncal",
+      "flow_type": "transferencia_intragrupo",
+      "origin": {
+        "name": "Puente Salto Grande",
+        "lat": -31.27511,
+        "lon": -57.93825,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "destination": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "country_code": "BR",
+      "customs_required": true,
+      "daily_route_limit_applies": false,
+      "vehicle_id": "internacional_BR",
+      "type": "camion_internacional",
+      "distance_km": 434.75,
+      "driving_time_min": 465.6,
+      "border_delay_profile": "agile",
+      "border_delay_min": 70,
+      "total_time_min": 535.6,
+      "demand_transferred": 32
+    }
+  ],
+  "routes": [
+    {
+      "vehicle_id": "AR_furgoneta_01",
+      "type": "furgoneta",
+      "distance_km": 249.22,
+      "total_time_min": 197.8,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 107.8,
+      "return_time_min": 90.1,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR006",
+          "name": "Colón",
+          "country_code": "AR",
+          "lat": -32.2182804,
+          "lon": -58.1356171,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_02",
+      "type": "furgoneta",
+      "distance_km": 452.8,
+      "total_time_min": 335.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 174.6,
+      "return_time_min": 160.6,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR018",
+          "name": "Rosario del Tala",
+          "country_code": "AR",
+          "lat": -32.3008178,
+          "lon": -59.138887,
+          "demand": 6,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_03",
+      "type": "camion_mediano",
+      "distance_km": 400.89,
+      "total_time_min": 311.6,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 162.6,
+      "return_time_min": 149.0,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR021",
+          "name": "Basavilbaso",
+          "country_code": "AR",
+          "lat": -32.3743512,
+          "lon": -58.8830126,
+          "demand": 1,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_04",
+      "type": "furgoneta",
+      "distance_km": 74.11,
+      "total_time_min": 86.2,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 50.6,
+      "return_time_min": 35.6,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR016",
+          "name": "Colonia Ayui",
+          "country_code": "AR",
+          "lat": -31.2068575,
+          "lon": -58.0304248,
+          "demand": 1,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_05",
+      "type": "camion_mediano",
+      "distance_km": 119.53,
+      "total_time_min": 121.2,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 70.2,
+      "return_time_min": 51.0,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR008",
+          "name": "San Salvador",
+          "country_code": "AR",
+          "lat": -31.6247717,
+          "lon": -58.5051869,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_06",
+      "type": "furgoneta",
+      "distance_km": 72.3,
+      "total_time_min": 97.3,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 56.7,
+      "return_time_min": 40.6,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR015",
+          "name": "Los Charrúas",
+          "country_code": "AR",
+          "lat": -31.1695333,
+          "lon": -58.1862719,
+          "demand": 1,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_grande_07",
+      "type": "camion_grande",
+      "distance_km": 191.76,
+      "total_time_min": 173.5,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 94.1,
+      "return_time_min": 79.3,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR022",
+          "name": "Mocoretá",
+          "country_code": "AR",
+          "lat": -30.6192351,
+          "lon": -57.9665847,
+          "demand": 3,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_08",
+      "type": "camion_mediano",
+      "distance_km": 98.96,
+      "total_time_min": 102.9,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 59.0,
+      "return_time_min": 43.8,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR020",
+          "name": "General Campos",
+          "country_code": "AR",
+          "lat": -31.5233816,
+          "lon": -58.405795,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_09",
+      "type": "furgoneta",
+      "distance_km": 12.71,
+      "total_time_min": 33.8,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 24.8,
+      "return_time_min": 9.0,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR007",
+          "name": "Villa Adela",
+          "country_code": "AR",
+          "lat": -31.3987112,
+          "lon": -58.0715482,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_10",
+      "type": "camion_mediano",
+      "distance_km": 79.08,
+      "total_time_min": 116.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 67.7,
+      "return_time_min": 49.0,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR019",
+          "name": "Puerto Yeruá",
+          "country_code": "AR",
+          "lat": -31.533997,
+          "lon": -58.0143686,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_11",
+      "type": "furgoneta",
+      "distance_km": 45.44,
+      "total_time_min": 64.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 39.8,
+      "return_time_min": 24.3,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR014",
+          "name": "La Criolla",
+          "country_code": "AR",
+          "lat": -31.2689855,
+          "lon": -58.1089185,
+          "demand": 1,
+          "cargo_type": "fragil"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_12",
+      "type": "furgoneta",
+      "distance_km": 324.94,
+      "total_time_min": 287.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 151.3,
+      "return_time_min": 135.8,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR017",
+          "name": "San José de Feliciano",
+          "country_code": "AR",
+          "lat": -30.3854477,
+          "lon": -58.7506643,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_13",
+      "type": "camion_mediano",
+      "distance_km": 214.72,
+      "total_time_min": 268.2,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 141.9,
+      "return_time_min": 126.4,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR009",
+          "name": "Federal",
+          "country_code": "AR",
+          "lat": -30.9558743,
+          "lon": -58.7797943,
+          "demand": 5,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_grande_14",
+      "type": "camion_grande",
+      "distance_km": 0.0,
+      "total_time_min": 15.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 15.0,
+      "return_time_min": 0.0,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR001",
+          "name": "Concordia",
+          "country_code": "AR",
+          "lat": -31.3972539,
+          "lon": -58.0173305,
+          "demand": 6,
+          "cargo_type": "fragil"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_15",
+      "type": "furgoneta",
+      "distance_km": 216.01,
+      "total_time_min": 176.2,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 96.4,
+      "return_time_min": 79.9,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR010",
+          "name": "San José",
+          "country_code": "AR",
+          "lat": -32.2122726,
+          "lon": -58.2191465,
+          "demand": 6,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_16",
+      "type": "furgoneta",
+      "distance_km": 23.82,
+      "total_time_min": 50.3,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 33.0,
+      "return_time_min": 17.3,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR012",
+          "name": "Benito Legerén",
+          "country_code": "AR",
+          "lat": -31.4340229,
+          "lon": -58.0741894,
+          "demand": 3,
+          "cargo_type": "fragil"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_17",
+      "type": "camion_mediano",
+      "distance_km": 245.42,
+      "total_time_min": 234.2,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 128.5,
+      "return_time_min": 105.8,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR004",
+          "name": "Villaguay",
+          "country_code": "AR",
+          "lat": -31.8676271,
+          "lon": -59.0270174,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_frigorifico_18",
+      "type": "camion_frigorifico",
+      "distance_km": 164.02,
+      "total_time_min": 154.9,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 84.8,
+      "return_time_min": 70.1,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR003",
+          "name": "Chajarí",
+          "country_code": "AR",
+          "lat": -30.7603828,
+          "lon": -57.9852672,
+          "demand": 2,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_mediano_19",
+      "type": "camion_mediano",
+      "distance_km": 293.59,
+      "total_time_min": 239.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 127.1,
+      "return_time_min": 112.6,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR002",
+          "name": "Concepción del Uruguay",
+          "country_code": "AR",
+          "lat": -32.4851849,
+          "lon": -58.2320232,
+          "demand": 5,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_20",
+      "type": "furgoneta",
+      "distance_km": 233.64,
+      "total_time_min": 184.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 99.8,
+      "return_time_min": 84.3,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR013",
+          "name": "Villa Elisa",
+          "country_code": "AR",
+          "lat": -32.1631324,
+          "lon": -58.4004902,
+          "demand": 6,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_camion_grande_21",
+      "type": "camion_grande",
+      "distance_km": 127.77,
+      "total_time_min": 136.9,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 75.7,
+      "return_time_min": 61.3,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR005",
+          "name": "Federación",
+          "country_code": "AR",
+          "lat": -30.9856574,
+          "lon": -57.9194395,
+          "demand": 2,
+          "cargo_type": "fragil"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "AR_furgoneta_22",
+      "type": "furgoneta",
+      "distance_km": 334.61,
+      "total_time_min": 271.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 143.3,
+      "return_time_min": 127.8,
+      "depot": {
+        "name": "Depósito Concordia",
+        "lat": -31.3972539,
+        "lon": -58.0173305,
+        "country_code": "AR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "AR011",
+          "name": "Monte Caseros",
+          "country_code": "AR",
+          "lat": -30.2496832,
+          "lon": -57.6294418,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_01",
+      "type": "camion_grande",
+      "distance_km": 297.06,
+      "total_time_min": 310.4,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 163.5,
+      "return_time_min": 146.9,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY039",
+          "name": "Tomás Gomensoro",
+          "country_code": "UY",
+          "lat": -30.4304107,
+          "lon": -57.435025,
+          "demand": 6,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_02",
+      "type": "camion_grande",
+      "distance_km": 119.47,
+      "total_time_min": 142.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 79.0,
+      "return_time_min": 63.1,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY028",
+          "name": "Constitución",
+          "country_code": "UY",
+          "lat": -31.0671956,
+          "lon": -57.8493627,
+          "demand": 3,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_mediano_03",
+      "type": "camion_mediano",
+      "distance_km": 37.6,
+      "total_time_min": 69.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 42.8,
+      "return_time_min": 26.9,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY036",
+          "name": "Garibaldi",
+          "country_code": "UY",
+          "lat": -31.3394184,
+          "lon": -57.8289095,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_furgoneta_04",
+      "type": "furgoneta",
+      "distance_km": 253.6,
+      "total_time_min": 241.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 129.0,
+      "return_time_min": 112.7,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY040",
+          "name": "San Félix",
+          "country_code": "UY",
+          "lat": -32.3511177,
+          "lon": -58.1016822,
+          "demand": 4,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_mediano_05",
+      "type": "camion_mediano",
+      "distance_km": 19.61,
+      "total_time_min": 38.3,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 27.3,
+      "return_time_min": 10.9,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY034",
+          "name": "Termas del Daymán",
+          "country_code": "UY",
+          "lat": -31.4525017,
+          "lon": -57.9083609,
+          "demand": 1,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_06",
+      "type": "camion_grande",
+      "distance_km": 173.11,
+      "total_time_min": 183.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 99.5,
+      "return_time_min": 83.5,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY038",
+          "name": "Belén",
+          "country_code": "UY",
+          "lat": -30.789358,
+          "lon": -57.7790732,
+          "demand": 2,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_07",
+      "type": "camion_grande",
+      "distance_km": 141.06,
+      "total_time_min": 159.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 87.7,
+      "return_time_min": 71.3,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY032",
+          "name": "Quebracho",
+          "country_code": "UY",
+          "lat": -31.9355644,
+          "lon": -57.9005404,
+          "demand": 4,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_mediano_08",
+      "type": "camion_mediano",
+      "distance_km": 43.82,
+      "total_time_min": 73.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 44.5,
+      "return_time_min": 28.6,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY033",
+          "name": "San Antonio",
+          "country_code": "UY",
+          "lat": -31.3574021,
+          "lon": -57.7669147,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_09",
+      "type": "camion_grande",
+      "distance_km": 25.2,
+      "total_time_min": 45.8,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 30.9,
+      "return_time_min": 14.9,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY029",
+          "name": "Colonia 18 de Julio",
+          "country_code": "UY",
+          "lat": -31.3563317,
+          "lon": -57.8739866,
+          "demand": 3,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_mediano_10",
+      "type": "camion_mediano",
+      "distance_km": 235.77,
+      "total_time_min": 226.5,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 121.6,
+      "return_time_min": 104.9,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY027",
+          "name": "Nuevo Paysandú",
+          "country_code": "UY",
+          "lat": -32.2702086,
+          "lon": -58.0837759,
+          "demand": 5,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_furgoneta_11",
+      "type": "furgoneta",
+      "distance_km": 289.69,
+      "total_time_min": 233.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 124.8,
+      "return_time_min": 109.0,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY025",
+          "name": "Bella Unión",
+          "country_code": "UY",
+          "lat": -30.2612301,
+          "lon": -57.6059002,
+          "demand": 8,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_furgoneta_12",
+      "type": "furgoneta",
+      "distance_km": 405.17,
+      "total_time_min": 402.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 209.2,
+      "return_time_min": 192.8,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY031",
+          "name": "Guichón",
+          "country_code": "UY",
+          "lat": -32.3603815,
+          "lon": -57.2002983,
+          "demand": 6,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_mediano_13",
+      "type": "camion_mediano",
+      "distance_km": 260.26,
+      "total_time_min": 362.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 189.2,
+      "return_time_min": 173.4,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY037",
+          "name": "Baltasar Brum",
+          "country_code": "UY",
+          "lat": -30.7201503,
+          "lon": -57.3307941,
+          "demand": 5,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_14",
+      "type": "camion_grande",
+      "distance_km": 355.06,
+      "total_time_min": 338.8,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 177.7,
+      "return_time_min": 161.2,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY026",
+          "name": "Young",
+          "country_code": "UY",
+          "lat": -32.6995318,
+          "lon": -57.6341992,
+          "demand": 6,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_furgoneta_15",
+      "type": "furgoneta",
+      "distance_km": 0.0,
+      "total_time_min": 15.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 15.0,
+      "return_time_min": 0.0,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY023",
+          "name": "Salto",
+          "country_code": "UY",
+          "lat": -31.38889,
+          "lon": -57.9608876,
+          "demand": 8,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_furgoneta_16",
+      "type": "furgoneta",
+      "distance_km": 32.43,
+      "total_time_min": 53.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 34.3,
+      "return_time_min": 18.6,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY035",
+          "name": "Albisu",
+          "country_code": "UY",
+          "lat": -31.3842312,
+          "lon": -57.8146463,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_mediano_17",
+      "type": "camion_mediano",
+      "distance_km": 245.14,
+      "total_time_min": 242.4,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 129.3,
+      "return_time_min": 113.0,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY024",
+          "name": "Paysandú",
+          "country_code": "UY",
+          "lat": -32.3217257,
+          "lon": -58.0892136,
+          "demand": 5,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "UY_camion_grande_18",
+      "type": "camion_grande",
+      "distance_km": 247.38,
+      "total_time_min": 258.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 137.6,
+      "return_time_min": 121.1,
+      "depot": {
+        "name": "Depósito Salto",
+        "lat": -31.38889,
+        "lon": -57.9608876,
+        "country_code": "UY",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "UY030",
+          "name": "Chacras de Paysandú",
+          "country_code": "UY",
+          "lat": -32.3438623,
+          "lon": -58.0086687,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_furgoneta_01",
+      "type": "furgoneta",
+      "distance_km": 315.13,
+      "total_time_min": 322.7,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 169.1,
+      "return_time_min": 153.7,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR050",
+          "name": "Francisco Borges",
+          "country_code": "BR",
+          "lat": -30.079588,
+          "lon": -57.217561,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_camion_grande_02",
+      "type": "camion_grande",
+      "distance_km": 133.76,
+      "total_time_min": 241.5,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 128.3,
+      "return_time_min": 113.2,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR049",
+          "name": "Cati",
+          "country_code": "BR",
+          "lat": -30.444926,
+          "lon": -55.934737,
+          "demand": 2,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_camion_frigorifico_03",
+      "type": "camion_frigorifico",
+      "distance_km": 217.33,
+      "total_time_min": 218.9,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 116.5,
+      "return_time_min": 102.4,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR043",
+          "name": "Sant'Ana do Livramento",
+          "country_code": "BR",
+          "lat": -30.8894097,
+          "lon": -55.5317694,
+          "demand": 2,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_furgoneta_04",
+      "type": "furgoneta",
+      "distance_km": 520.78,
+      "total_time_min": 441.6,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 228.1,
+      "return_time_min": 213.5,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR048",
+          "name": "Maçambará",
+          "country_code": "BR",
+          "lat": -29.144485,
+          "lon": -56.067444,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_camion_mediano_05",
+      "type": "camion_mediano",
+      "distance_km": 376.95,
+      "total_time_min": 357.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 186.2,
+      "return_time_min": 170.9,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR047",
+          "name": "Barra do Quaraí",
+          "country_code": "BR",
+          "lat": -30.208947,
+          "lon": -57.5505128,
+          "demand": 3,
+          "cargo_type": "fragil"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_furgoneta_06",
+      "type": "furgoneta",
+      "distance_km": 435.42,
+      "total_time_min": 358.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 185.9,
+      "return_time_min": 172.1,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR045",
+          "name": "Itaqui",
+          "country_code": "BR",
+          "lat": -29.1222037,
+          "lon": -56.5551258,
+          "demand": 2,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_furgoneta_07",
+      "type": "furgoneta",
+      "distance_km": 0.0,
+      "total_time_min": 15.0,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 15.0,
+      "return_time_min": 0.0,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR041",
+          "name": "Quaraí",
+          "country_code": "BR",
+          "lat": -30.3818093,
+          "lon": -56.4526576,
+          "demand": 4,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_camion_mediano_08",
+      "type": "camion_mediano",
+      "distance_km": 334.9,
+      "total_time_min": 319.1,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 167.1,
+      "return_time_min": 152.0,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR046",
+          "name": "Manoel Viana",
+          "country_code": "BR",
+          "lat": -29.585935,
+          "lon": -55.484112,
+          "demand": 3,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_furgoneta_09",
+      "type": "furgoneta",
+      "distance_km": 240.47,
+      "total_time_min": 218.3,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 117.0,
+      "return_time_min": 101.3,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR044",
+          "name": "Alegrete",
+          "country_code": "BR",
+          "lat": -29.790166,
+          "lon": -55.794862,
+          "demand": 4,
+          "cargo_type": "general"
+        }
+      ]
+    },
+    {
+      "vehicle_id": "BR_camion_grande_10",
+      "type": "camion_grande",
+      "distance_km": 241.48,
+      "total_time_min": 240.9,
+      "daily_route_limit_min": 480,
+      "daily_route_limit_applies": true,
+      "daily_route_compliant": true,
+      "delivery_time_min": 127.7,
+      "return_time_min": 113.2,
+      "depot": {
+        "name": "Depósito Quaraí",
+        "lat": -30.3818093,
+        "lon": -56.4526573,
+        "country_code": "BR",
+        "place": "depot"
+      },
+      "stops": [
+        {
+          "stop_id": "BR042",
+          "name": "Uruguaiana",
+          "country_code": "BR",
+          "lat": -29.7560726,
+          "lon": -57.0867546,
+          "demand": 8,
+          "cargo_type": "refrigerado"
+        }
+      ]
+    }
+  ]
+}
