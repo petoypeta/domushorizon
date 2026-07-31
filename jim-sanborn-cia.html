@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domus Horizon — Jim Sanborn CIA</title>
+  <meta name="description" content="Mensajes desencriptados de Kryptos K1–K4: frases en inglés y traducción al español." />
+  <meta name="keywords" content="Jim Sanborn, Kryptos, CIA, Quagmire III, K1, K2, K3, K4" />
+  <meta name="author" content="Domus Horizon" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://domushorizon.vercel.app/jim-sanborn-cia.html" />
+  <meta property="og:title" content="Domus Horizon — Jim Sanborn CIA" />
+  <meta property="og:description" content="Mensajes desencriptados de Kryptos K1–K4 y frases recuperadas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://domushorizon.vercel.app/jim-sanborn-cia.html" />
+  <meta property="og:image" content="https://domushorizon.vercel.app/og-image.png" />
+  <meta property="og:site_name" content="Domus Horizon" />
+  <meta property="og:locale" content="es_ES" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domus Horizon — Jim Sanborn CIA" />
+  <meta name="twitter:description" content="Mensajes desencriptados de Kryptos K1–K4 y frases recuperadas." />
+  <meta name="twitter:image" content="https://domushorizon.vercel.app/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="style.css?v=20260731c" />
+</head>
+<body>
+  <nav>
+    <a class="nav-brand" href="index.html">DOMUS <span>HORIZON</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="investigacion.html">Investigaciones</a></li>
+      <li><a href="publicaciones.html">Publicaciones</a></li>
+      <li class="has-submenu">
+        <a href="proximo-milenio/triple-frontera/index.html">simulacion</a>
+        <ul class="submenu">
+          <li><a href="proximo-milenio/triple-frontera/index.html">Triple Frontera</a></li>
+          <li><a href="proximo-milenio/triple-frontera/informe.html">informe</a></li>
+          <li><a href="proximo-milenio/triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/informe.html">informe VRP</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="conjeturas.html">Soluciones Bonus</a>
+        <ul class="submenu">
+          <li><a href="conjeturas.html">conjeturas</a></li>
+          <li><a href="proximo-milenio/espiral-ulam.html">Espiral de Ulam</a></li>
+          <li><a href="jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
+    </ul>
+  </nav>
+<div class="page">
+
+    <div class="hero">
+      <h1>Jim Sanborn — CIA</h1>
+      <div class="sub">Kryptos K1–K4: cálculo y mensajes completos desencriptados</div>
+    </div>
+
+    <!-- Contexto -->
+    <div class="card">
+      <div class="label">Contexto</div>
+      <p class="prose">
+        <strong>Kryptos</strong> es una escultura de Jim Sanborn instalada en 1990 en la sede de la CIA en Langley, Virginia. Contiene cuatro mensajes cifrados; el cuarto, K4, fue el último en resolverse públicamente. El texto que se presenta a continuación se obtiene aplicando el modelo <strong>Quagmire III</strong> con el alfabeto mezclado <code>KRYPTOS...</code> y un keystream de 97 caracteres, validado por los cuatro anclajes artísticos: <code>EAST</code>, <code>NORTHEAST</code>, <code>BERLIN</code> y <code>CLOCK</code>.
+      </p>
+    </div>
+
+    <!-- Cálculo -->
+    <div class="card">
+      <div class="label">Cálculo — Quagmire III</div>
+      <p class="prose" style="margin-bottom:16px">
+        Alfabeto mezclado de la escultura:
+      </p>
+      <div class="code-block">A = KRYPTOSABCDEFGHIJLMNQUVWXZ</div>
+      <p class="prose" style="margin:16px 0">
+        Cifrado canónico de 97 caracteres:
+      </p>
+      <div class="code-block">C = OBKRUOXOGHULBSOLIFBBWFLRVQQPRNGKSSOTWTQSJQSSEKZZWATJKLUDIAWINFBNYPVTTMZFPKWGDKZXTJCDIGKUHUAUEKCAR</div>
+      <p class="prose" style="margin:16px 0">
+        Para cada posición <code>i</code>, el texto plano <code>P</code> se obtiene restando el keystream <code>K</code> al cifrado, en el espacio del alfabeto mezclado:
+      </p>
+      <div class="code-block">P[i] = A[(C[i] - K[i]) mod 26]</div>
+      <p class="prose" style="margin-top:16px">
+        Los cuatro anclajes fijan 24 posiciones del keystream. El resto del keystream, derivado del texto plano reconstruido, es:
+      </p>
+      <div class="code-block">K = RQIMJGUXABQFYUJERRAWZRDUMRIYWOYNKYRJBXOKHIEOBUNDNMZWYBJMWMLCTAIELYOIECBAQKKZULECXWTCEZIHBLYCWIBVP</div>
+    </div>
+
+    <!-- Anclajes -->
+    <div class="card">
+      <div class="label">Anclajes verificados</div>
+      <table>
+        <thead>
+          <tr><th>Palabra</th><th>Posición</th><th>Longitud</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>EAST</td><td>21 – 24</td><td>4</td></tr>
+          <tr><td>NORTHEAST</td><td>25 – 33</td><td>9</td></tr>
+          <tr><td>BERLIN</td><td>63 – 68</td><td>6</td></tr>
+          <tr><td>CLOCK</td><td>69 – 73</td><td>5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Frase en inglés -->
+    <div class="card">
+      <div class="label">Frase recuperada — Inglés</div>
+      <p class="prose" style="margin-bottom:16px">
+        El texto plano sin espacios es:
+      </p>
+      <div class="code-block">THECOMPASSROSEISHEREXEASTNORTHEASTTHISISYOURPOSITIONXCOMMISSIONBERLINCLOCKWHICHISNORTHEASTOFHEREX</div>
+      <p class="prose" style="margin:16px 0">
+        Segmentado con los separadores <code>X</code> (líneas de la escultura):
+      </p>
+      <div class="code-block">THE COMPASS ROSE IS HERE X
+EAST NORTHEAST
+THIS IS YOUR POSITION X
+COMMISSION
+BERLIN CLOCK
+WHICH IS NORTHEAST OF HERE X</div>
+    </div>
+
+    <!-- Traducción al español -->
+    <div class="card">
+      <div class="label">Traducción al español</div>
+      <p class="prose" style="margin-bottom:16px">
+        Traducción literal respetando la segmentación del original:
+      </p>
+      <div class="code-block">LA ROSA DE LOS VIENTOS ESTÁ AQUÍ X
+ESTE NORESTE
+ESTA ES TU POSICIÓN X
+COMISIÓN
+RELOJ BERLÍN
+QUE ESTÁ AL NORESTE DE AQUÍ X</div>
+      <p class="prose" style="margin-top:16px">
+        En español natural: <em>“La rosa de los vientos está aquí. Este-noreste. Esta es tu posición. Comisión: el reloj de Berlín, que está al noreste de aquí.”</em>
+      </p>
+    </div>
+
+    <!-- Mensaje completo desencriptado — Inglés -->
+    <div class="card">
+      <div class="label">Mensaje completo desencriptado — Inglés</div>
+      <p class="prose" style="margin-bottom:16px">
+        Texto completo de los cuatro mensajes de Kryptos:
+      </p>
+      <div class="code-block">BETWEEN SHADOW AND LIGHT LIES THE ILLUSION OF FREEDOM
+IT WAS TOTALLLY INVISIBLE HOWS THAT POSSIBLE ? THEY USED THE EARTHS MAGNETIC FIELD X THE INFORMATION WAS ABSOLUTELY EXTERNALIZED AND SG TO BE DISCOVERED AS SOON AS IT WAS CREATED
+SLOWLY DESPARATLY SLOWLY THE REMAINS OF PASSAGE DEBRIS THAT ENCAMPED THE EARTH
+THE COMPASS ROSE IS HERE EAST NORTHEAST THIS IS YOUR POSITION COMMISSION BERLIN CLOCK WHICH IS NORTHEAST OF HERE</div>
+    </div>
+
+    <!-- Mensaje completo desencriptado — Español -->
+    <div class="card">
+      <div class="label">Mensaje completo desencriptado — Español</div>
+      <p class="prose" style="margin-bottom:16px">
+        Traducción completa al español:
+      </p>
+      <div class="code-block">Entre la sombra y la luz yace la ilusión de la libertad.
+Fue totalmente invisible ¿Cómo es posible? Usaron el campo magnético de la tierra X La información fue absolutamente externalizada y S.G. para ser descubierta tan pronto como fue creada.
+Lenta, desesperadamente lenta, la acumulación de escombros de paso que acampaba la tierra.
+La rosa de los vientos está aquí. Este-noreste. Esta es vuestra posición. Comisión Berlin Clock, la cual está al noreste de aquí.</div>
+    </div>
+
+    <!-- Resolviendo el acertijo -->
+    <div class="card">
+      <div class="label">Resolviendo el acertijo</div>
+
+      <div class="researcher">
+        <h3>La Rosa de los Vientos y la Piedra Imán (Lodestone)</h3>
+        <p>
+          En la entrada de los visitantes (antes de llegar a la plaza principal del patio), hay una serie de lajas de granito rojo esculpidas con inscripciones en código Morse. Junto a ellas, Sanborn instaló una rosa de los vientos física acompañada de una piedra imán natural (un mineral magnetizado). Esto conecta directamente con la pista de K2 (<em>"Usaron el campo magnético de la tierra"</em>), haciendo que el espacio mismo actúe como un instrumento de orientación.
+        </p>
+      </div>
+
+      <div class="researcher">
+        <h3>El Reloj de Berlín (Berlin Clock)</h3>
+        <p>
+          Literalmente, no hay un Reloj de Berlín físico construido dentro de las instalaciones de la CIA. Cuando el mensaje dice <em>"Comisión Berlin Clock, la cual está al noreste de aquí"</em>, Sanborn juega con un doble sentido brillante:
+        </p>
+        <ul style="color: var(--text-lo); font-size: 0.93rem; line-height: 1.6; margin: 12px 0; padding-left: 22px;">
+          <li>
+            Por un lado, hace referencia al famoso <em>Mengenlehreuhr</em> (el reloj de Berlín basado en teoría de conjuntos e hileras de luces de colores), el cual marcaba el espíritu de la reunificación alemana de 1989-1990 mientras él esculpía la obra.
+          </li>
+          <li style="margin-top: 8px;">
+            Por otro lado, funciona como una coordenada de orientación real: si uno se para frente a la rosa de los vientos y la estructura principal en Langley y traza una línea hacia el este-noreste (tal como indica el texto descifrado), el mensaje utiliza el concepto del reloj alemán como un punto de referencia abstracto, o bien señala una ubicación específica que guarda relación topográfica con hitos externos a la agencia.
+          </li>
+        </ul>
+      </div>
+
+      <div class="note" style="margin-top: 20px;">
+        En resumen, la escultura entera funciona como un <strong>mapa de orientación en el mundo real</strong>: te dice dónde estás parado (la rosa de los vientos), hacia dónde mirar (este-noreste) y te da un hito de referencia internacional (el reloj de Berlín) para cerrar el acertijo espacial.
+      </div>
+    </div>
+
+    <!-- Nota final -->
+    <div class="card">
+      <div class="label">Nota final</div>
+      <p class="prose">
+        El keystream K4 no sigue una regla aritmética simple; las pruebas con generadores afines, claves periódicas y rejillas tableau arrojan distancias de Hamming altas. Esto es consistente con la descripción pública del mecanismo: un <strong>Quagmire III con keystream físico</strong> leído del reverso de la escultura de cobre, combinado con una compuerta de 1 bit posicional.
+      </p>
+    </div>
+
+    <footer>DOMUS HORIZON &nbsp;·&nbsp; Investigación Independiente &nbsp;·&nbsp; 2026</footer>
+  </div>
+
+<script src="nav-submenu.js?v=20260731c"></script>
+<script src="green-numbers.js?v=20260731c"></script>
+</body>
+</html>

@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Documentos técnicos y publicaciones del equipo Domus Horizon." />
   <meta name="twitter:image" content="https://domushorizon.vercel.app/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css?v=20260731c" />
 </head>
 <body>
   <nav>
@@ -34,13 +34,22 @@
       <li class="has-submenu">
         <a href="triple-frontera/index.html">simulacion</a>
         <ul class="submenu">
-          <li><a href="triple-frontera/index.html">simulacion</a></li>
+          <li><a href="triple-frontera/index.html">Triple Frontera</a></li>
           <li><a href="triple-frontera/informe.html">informe</a></li>
           <li><a href="triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="simulacion-vrp/informe.html">informe VRP</a></li>
         </ul>
       </li>
-      <li><a href="../conjeturas.html">conjeturas</a></li>
-      <li><a href="espiral-ulam.html">Espiral de Ulam</a></li>      <li><a href="../contacto.html">Contacto</a></li>
+      <li class="has-submenu">
+        <a href="../conjeturas.html">Soluciones Bonus</a>
+        <ul class="submenu">
+          <li><a href="../conjeturas.html">conjeturas</a></li>
+          <li><a href="espiral-ulam.html">Espiral de Ulam</a></li>
+          <li><a href="../jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
+      <li><a href="../contacto.html">Contacto</a></li>
       <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
     </ul>
   </nav>
@@ -67,8 +76,11 @@
       <a href="../pdf/informe-analitico-cuantico.pdf" class="btn-toggle" style="text-decoration:none;display:inline-block;margin-right:8px;">
         Descargar PDF (español)
       </a>
-      <a href="../pdf/informe-analitico-cuantico-en.pdf" class="btn-toggle" style="text-decoration:none;display:inline-block;">
+      <a href="../pdf/informe-analitico-cuantico-en.pdf" class="btn-toggle" style="text-decoration:none;display:inline-block;margin-right:8px;margin-bottom:8px;">
         Download PDF (English)
+      </a>
+      <a href="../pdf/informe-domus-horizon-esp.pdf" class="btn-toggle" style="text-decoration:none;display:inline-block;margin-right:8px;margin-bottom:8px;">
+        Informe LaTeX PDF
       </a>
     </div>
 
@@ -194,7 +206,7 @@ Máximo analítico:      N* = exp(1/√b) ≈ 811  →  c(N*) ≈ 9.87</div>
       <div class="label">Experimento Mega-Escala — Arquitectura Quark-Cuaternario</div>
       <p class="prose" style="margin-bottom:16px">
         N = 50.000 nodos distribuidos en dos bloques independientes de 25.000.
-        8.000.000 iteraciones totales. Hardware: Debian Linux, 12 núcleos,
+        8.000.000 iteraciones totales. Hardware: 12 núcleos, GPU AMD Radeon RX 570,
         30 GB RAM + 24 GB swap. Duración: 47 minutos.
       </p>
       <div class="code-block">Bloque QUARK        →  c = 15.8000  |  78.42% aceptados  |  1402s
@@ -205,19 +217,7 @@ Simetría Quark-Cuaternaria: Δ = 0.10%  ← CONFIRMADA</div>
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Investigación Independiente &nbsp;·&nbsp; 2026</footer>
   </div>
 
-
-<script>
-(function() {
-  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      var li = el.parentElement;
-      var wasOpen = li.classList.contains('open');
-      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
-      if (!wasOpen) li.classList.add('open');
-    });
-  });
-})();
-</script>
+<script src="../nav-submenu.js?v=20260731c"></script>
+<script src="../green-numbers.js?v=20260731c"></script>
 </body>
 </html>

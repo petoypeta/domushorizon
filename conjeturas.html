@@ -6,7 +6,7 @@
   <title>Domus Horizon — Cuatro Conjeturas Matemáticas</title>
   <meta name="description" content="Resoluciones de Goldbach, primos gemelos, Collatz y Hipótesis del Continuo bajo el marco DOMUS HORIZON." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260731c" />
   <style>
     .hero h1 { font-size: 1.7rem; }
     .hero .sub { font-size: 1rem; color: #94a3b8; }
@@ -34,19 +34,26 @@
       <li class="has-submenu">
         <a href="proximo-milenio/triple-frontera/index.html">simulacion</a>
         <ul class="submenu">
-          <li><a href="proximo-milenio/triple-frontera/index.html">simulacion</a></li>
+          <li><a href="proximo-milenio/triple-frontera/index.html">Triple Frontera</a></li>
           <li><a href="proximo-milenio/triple-frontera/informe.html">informe</a></li>
           <li><a href="proximo-milenio/triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/informe.html">informe VRP</a></li>
         </ul>
       </li>
-      <li><a href="conjeturas.html" class="active">conjeturas</a></li>
-      <li><a href="proximo-milenio/espiral-ulam.html">Espiral de Ulam</a></li>
+      <li class="has-submenu">
+        <a href="conjeturas.html">Soluciones Bonus</a>
+        <ul class="submenu">
+          <li><a href="conjeturas.html">conjeturas</a></li>
+          <li><a href="proximo-milenio/espiral-ulam.html">Espiral de Ulam</a></li>
+          <li><a href="jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
     </ul>
   </nav>
-
-  <div class="page">
+<div class="page">
     <div class="hero">
       <h1>Cuatro Conjeturas Matemáticas</h1>
       <div class="sub">Goldbach · Primos gemelos · Collatz · Hipótesis del Continuo · Marco DOMUS HORIZON</div>
@@ -60,14 +67,17 @@
         <a href="#collatz">Collatz</a>
         <a href="#continuo">Hipótesis del Continuo</a>
       </div>
-      <p style="margin-top: 1rem;">
-        <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/Goldbach/Goldbach_Domus_Horizon.md" download>Descargar Goldbach</a>
-        <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/primos%20gemelos/PrimosGemelos_Domus_Horizon.md" download style="margin-left: 0.5rem;">Descargar primos gemelos</a>
-        <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/Collatz/Collatz_Domus_Horizon.md" download style="margin-left: 0.5rem;">Descargar Collatz</a>
-        <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/Continuo/Continuo_Domus_Horizon.md" download style="margin-left: 0.5rem;">Descargar Continuo</a>
-      </p>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:1rem;">
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+          <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/Goldbach/Goldbach_Domus_Horizon.md" download style="text-decoration:none;display:inline-block;text-align:center;min-width:260px;">Descargar Goldbach</a>
+          <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/primos%20gemelos/PrimosGemelos_Domus_Horizon.md" download style="text-decoration:none;display:inline-block;text-align:center;min-width:260px;">Descargar primos gemelos</a>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;">
+          <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/Collatz/Collatz_Domus_Horizon.md" download style="text-decoration:none;display:inline-block;text-align:center;min-width:260px;">Descargar Collatz</a>
+          <a class="btn-toggle" href="proximo-milenio/cuatro-conjeturas/Continuo/Continuo_Domus_Horizon.md" download style="text-decoration:none;display:inline-block;text-align:center;min-width:260px;">Descargar Continuo</a>
+        </div>
+      </div>
     </div>
-
 
     <div class="card" id="goldbach">
       <div class="label">Goldbach</div>
@@ -413,9 +423,9 @@
 <p><em>Documento generado bajo el marco DOMUS HORIZON para el proyecto de las cuatro conjeturas matemáticas.</em></p></div>
     </div>
 
-
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; 2026</footer>
   </div>
-<script src="nav-submenu.js"></script>
+<script src="nav-submenu.js?v=20260731c"></script>
+<script src="green-numbers.js?v=20260731c"></script>
 </body>
 </html>

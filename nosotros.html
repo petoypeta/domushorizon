@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Equipo de Domus Horizon: investigación independiente en matemática, física e ingeniería de sistemas." />
   <meta name="twitter:image" content="https://domushorizon.vercel.app/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260731c" />
 </head>
 <body>
   <nav>
@@ -34,17 +34,26 @@
       <li class="has-submenu">
         <a href="proximo-milenio/triple-frontera/index.html">simulacion</a>
         <ul class="submenu">
-          <li><a href="proximo-milenio/triple-frontera/index.html">simulacion</a></li>
+          <li><a href="proximo-milenio/triple-frontera/index.html">Triple Frontera</a></li>
           <li><a href="proximo-milenio/triple-frontera/informe.html">informe</a></li>
           <li><a href="proximo-milenio/triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/informe.html">informe VRP</a></li>
         </ul>
       </li>
-      <li><a href="conjeturas.html">conjeturas</a></li>      <li><a href="contacto.html">Contacto</a></li>
+      <li class="has-submenu">
+        <a href="conjeturas.html">Soluciones Bonus</a>
+        <ul class="submenu">
+          <li><a href="conjeturas.html">conjeturas</a></li>
+          <li><a href="proximo-milenio/espiral-ulam.html">Espiral de Ulam</a></li>
+          <li><a href="jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
       <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
     </ul>
   </nav>
-
-  <div class="page">
+<div class="page">
 
     <div class="hero">
       <h1>Nosotros</h1>
@@ -110,19 +119,7 @@
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Investigación Independiente &nbsp;·&nbsp; 2026</footer>
   </div>
 
-
-<script>
-(function() {
-  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      var li = el.parentElement;
-      var wasOpen = li.classList.contains('open');
-      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
-      if (!wasOpen) li.classList.add('open');
-    });
-  });
-})();
-</script>
+<script src="nav-submenu.js?v=20260731c"></script>
+<script src="green-numbers.js?v=20260731c"></script>
 </body>
 </html>

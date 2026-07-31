@@ -6,7 +6,7 @@
   <title>Domus Horizon — Espiral de Ulam</title>
   <meta name="description" content="Visualización computacional de la espiral de Ulam hasta 900.060.001, con fórmulas de coordenadas y análisis de diagonales primas." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css?v=20260731c" />
   <style>
     .ulam-intro { max-width: 780px; font-size: 1.08rem; color: #cbd5e1; line-height: 1.7; }
     .ulam-preview { width: 100%; display: block; image-rendering: pixelated; background: #fff; border-radius: 10px; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
@@ -32,13 +32,21 @@
       <li class="has-submenu">
         <a href="triple-frontera/index.html">simulacion</a>
         <ul class="submenu">
-          <li><a href="triple-frontera/index.html">simulacion</a></li>
+          <li><a href="triple-frontera/index.html">Triple Frontera</a></li>
           <li><a href="triple-frontera/informe.html">informe</a></li>
           <li><a href="triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="simulacion-vrp/informe.html">informe VRP</a></li>
         </ul>
       </li>
-      <li><a href="../conjeturas.html">conjeturas</a></li>
-      <li><a href="espiral-ulam.html" class="active">Espiral de Ulam</a></li>
+      <li class="has-submenu">
+        <a href="../conjeturas.html">Soluciones Bonus</a>
+        <ul class="submenu">
+          <li><a href="../conjeturas.html">conjeturas</a></li>
+          <li><a href="espiral-ulam.html">Espiral de Ulam</a></li>
+          <li><a href="../jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
       <li><a href="../contacto.html">Contacto</a></li>
       <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
     </ul>
@@ -87,6 +95,7 @@ x = r:  n = M - (6r + r - y)</div>
     </section>
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Próximo Milenio &nbsp;·&nbsp; Matemática computacional</footer>
   </main>
-  <script src="../nav-submenu.js"></script>
+  <script src="../nav-submenu.js?v=20260731c"></script>
+<script src="../green-numbers.js?v=20260731c"></script>
 </body>
 </html>

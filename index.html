@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Investigación independiente sobre optimización de complejidad dinámica, transiciones de fase y solución estocástico-geométrica aplicada a P vs NP y los Problemas del Milenio." />
   <meta name="twitter:image" content="https://domushorizon.vercel.app/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260731c" />
 </head>
 <body>
   <nav>
@@ -34,17 +34,26 @@
       <li class="has-submenu">
         <a href="proximo-milenio/triple-frontera/index.html">simulacion</a>
         <ul class="submenu">
-          <li><a href="proximo-milenio/triple-frontera/index.html">simulacion</a></li>
+          <li><a href="proximo-milenio/triple-frontera/index.html">Triple Frontera</a></li>
           <li><a href="proximo-milenio/triple-frontera/informe.html">informe</a></li>
           <li><a href="proximo-milenio/triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="proximo-milenio/simulacion-vrp/informe.html">informe VRP</a></li>
         </ul>
       </li>
-      <li><a href="conjeturas.html">conjeturas</a></li>      <li><a href="contacto.html">Contacto</a></li>
+      <li class="has-submenu">
+        <a href="conjeturas.html">Soluciones Bonus</a>
+        <ul class="submenu">
+          <li><a href="conjeturas.html">conjeturas</a></li>
+          <li><a href="proximo-milenio/espiral-ulam.html">Espiral de Ulam</a></li>
+          <li><a href="jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
       <li><a href="index-en.html" class="lang-switch" aria-label="Switch to English">ING</a></li>
     </ul>
   </nav>
-
-  <div class="page">
+<div class="page">
 
     <!-- Hero -->
     <div class="hero">
@@ -100,7 +109,7 @@
       <p class="prose">
         Este portal técnico aloja el análisis de datos riguroso basado en
         simulaciones de mega-escala (ejecutadas sobre arquitectura de nodos
-        distribuidos Debian Linux). A través de un Oráculo Geométrico Determinista
+        distribuidos con GPU AMD Radeon RX 570). A través de un Oráculo Geométrico Determinista
         (DGO) y la formalización analítica de la campana asimétrica mediante
         funciones de Runge modificadas, se establece un nuevo paradigma en la
         resolución y límites prácticos de la computación polinómica sobre grafos
@@ -122,6 +131,18 @@
       </p>
     </div>
 
+    <!-- Simulación VRP Chongqing -->
+    <div class="card">
+      <div class="label">Simulación VRP Chongqing</div>
+      <p class="prose">
+        Resultados del informe de operaciones logísticas para una flota heterogénea
+        de 50 vehículos y 1.450 puntos de entrega en un entorno tipo mega-ciudad.
+      </p>
+      <p style="margin-top: 1rem;">
+        <a class="btn-toggle" href="proximo-milenio/simulacion-vrp/index.html">Ver simulación</a>
+        <a class="btn-toggle" href="proximo-milenio/simulacion-vrp/informe.html" style="margin-left: 0.5rem;">Ver informe</a>
+      </p>
+    </div>
 
     <div class="card">
       <div class="label">Cuatro Conjeturas Matemáticas</div>
@@ -133,19 +154,7 @@
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Investigación Independiente &nbsp;·&nbsp; 2026</footer>
   </div>
 
-
-<script>
-(function() {
-  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      var li = el.parentElement;
-      var wasOpen = li.classList.contains('open');
-      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
-      if (!wasOpen) li.classList.add('open');
-    });
-  });
-})();
-</script>
+<script src="nav-submenu.js?v=20260731c"></script>
+<script src="green-numbers.js?v=20260731c"></script>
 </body>
 </html>

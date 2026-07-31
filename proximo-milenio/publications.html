@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Technical documents and publications by the Domus Horizon team." />
   <meta name="twitter:image" content="https://domushorizon.vercel.app/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style.css?v=20260731c" />
 </head>
 <body>
   <nav>
@@ -34,13 +34,22 @@
       <li class="has-submenu">
         <a href="triple-frontera/index.html">simulacion</a>
         <ul class="submenu">
-          <li><a href="triple-frontera/index.html">simulacion</a></li>
+          <li><a href="triple-frontera/index.html">Triple Frontera</a></li>
           <li><a href="triple-frontera/informe.html">informe</a></li>
           <li><a href="triple-frontera/auditoria.html">auditoria</a></li>
+          <li><a href="simulacion-vrp/index.html">Chongqing</a></li>
+          <li><a href="simulacion-vrp/informe.html">informe VRP</a></li>
         </ul>
       </li>
-      <li><a href="../conjeturas.html">conjeturas</a></li>
-      <li><a href="espiral-ulam.html">Ulam Spiral</a></li>      <li><a href="../contact-en.html">Contact</a></li>
+      <li class="has-submenu">
+        <a href="../conjeturas.html">Bonus Solutions</a>
+        <ul class="submenu">
+          <li><a href="../conjeturas.html">Conjectures</a></li>
+          <li><a href="espiral-ulam.html">Ulam Spiral</a></li>
+          <li><a href="../jim-sanborn-cia.html">Jim Sanborn CIA</a></li>
+        </ul>
+      </li>
+      <li><a href="../contact-en.html">Contact</a></li>
       <li><a href="index.html" class="lang-switch" aria-label="Switch to Spanish">ESP</a></li>
     </ul>
   </nav>
@@ -186,7 +195,7 @@ Analytical maximum:  N* = exp(1/√b) ≈ 811  →  c(N*) ≈ 9.87</div>
       <div class="label">Mega-Scale Experiment — Quark-Quaternary Architecture</div>
       <p class="prose" style="margin-bottom:16px">
         N = 50,000 nodes distributed in two independent blocks of 25,000.
-        8,000,000 total iterations. Hardware: Debian Linux, 12 cores,
+        8,000,000 total iterations. Hardware: 12 cores, AMD Radeon RX 570 GPU,
         30 GB RAM + 24 GB swap. Duration: 47 minutes.
       </p>
       <div class="code-block">QUARK block        →  c = 15.8000  |  78.42% accepted  |  1402s
@@ -197,19 +206,7 @@ Quark-Quaternary symmetry: Δ = 0.10%  ← CONFIRMED</div>
     <footer>DOMUS HORIZON &nbsp;·&nbsp; Independent Research &nbsp;·&nbsp; 2026</footer>
   </div>
 
-
-<script>
-(function() {
-  document.querySelectorAll('.has-submenu > a').forEach(function(el) {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      var li = el.parentElement;
-      var wasOpen = li.classList.contains('open');
-      document.querySelectorAll('.has-submenu.open').forEach(function(x) { x.classList.remove('open'); });
-      if (!wasOpen) li.classList.add('open');
-    });
-  });
-})();
-</script>
+<script src="../nav-submenu.js?v=20260731c"></script>
+<script src="../green-numbers.js?v=20260731c"></script>
 </body>
 </html>

@@ -103,8 +103,6 @@ nav {
   padding: 8px 14px;
 }
 
-.has-submenu:hover .submenu,
-.has-submenu:focus-within .submenu,
 .has-submenu.open .submenu {
   display: block;
 }
@@ -280,6 +278,52 @@ td {
 td:first-child { color: var(--text); font-weight: 600; }
 
 tr:last-child td { border-bottom: none; }
+
+/* ── Green numbers in calculation pages ────────────────────── */
+.math-inline, .math-display { color: var(--green); }
+td code, td strong { color: var(--green); }
+.num-green { color: var(--green); }
+
+/* ── Math display & inline ─────────────────────────────────── */
+.math-display {
+  overflow-x: auto;
+  padding: 0.8rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 6px;
+  font-family: monospace;
+  margin: 0.8rem 0;
+}
+
+.math-inline {
+  font-family: monospace;
+  background: rgba(255,255,255,0.06);
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* ── Pre & code blocks ─────────────────────────────────────── */
+pre {
+  background: rgba(0,0,0,0.3);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+/* ── Blockquote ────────────────────────────────────────────── */
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #cbd5e1;
+}
+
+/* ── Table hover ───────────────────────────────────────────── */
+tr:hover { background: rgba(255,255,255,0.03); }
 
 /* ── Badge ────────────────────────────────────────────────── */
 .badge {
